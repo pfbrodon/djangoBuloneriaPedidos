@@ -1,0 +1,1478 @@
+[
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200001,
+        "descripcion": "TORNILLO AUTOPERFORANTE C/WAFER P/AGUJA 8Xl/2",
+        "marca_id": 2,
+        "precioCosto": "17.05",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200002,
+        "descripcion": "TORNILLO AUTOPERFORANTE C/WAFER P/AGUJA 8Xl",
+        "marca_id": 2,
+        "precioCosto": "28.78",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200003,
+        "descripcion": "TORNILLO METRICO 3-0.5X4 PH",
+        "marca_id": 2,
+        "precioCosto": "12.2",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200004,
+        "descripcion": "TORNILLO METRICO 3-0.5X5 PH",
+        "marca_id": 2,
+        "precioCosto": "13.19",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200005,
+        "descripcion": "TORNILLO METRICO 3-0.5X6 PH",
+        "marca_id": 2,
+        "precioCosto": "14.18",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200006,
+        "descripcion": "TORNILLO METRICO 3-0.5Xl 0 PH",
+        "marca_id": 2,
+        "precioCosto": "18.12",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200007,
+        "descripcion": "TORNILLO METRICO 3-0.5Xl 5 PH",
+        "marca_id": 2,
+        "precioCosto": "22.43",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200008,
+        "descripcion": "TORNILLO METRICO 3-0.5Xl 8 PH",
+        "marca_id": 2,
+        "precioCosto": "24.67",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200009,
+        "descripcion": "TORNILLO METRICO 3-0.5X20 PH",
+        "marca_id": 2,
+        "precioCosto": "28.04",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200010,
+        "descripcion": "TORNILLO METRICO 3-0.5X25 PH",
+        "marca_id": 2,
+        "precioCosto": "28.58",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200011,
+        "descripcion": "TORNILLO METRICO 3-0.5X30 PH",
+        "marca_id": 2,
+        "precioCosto": "32.85",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200012,
+        "descripcion": "TORNILLO METRICO 4-0.7X5 PH",
+        "marca_id": 2,
+        "precioCosto": "19.44",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200013,
+        "descripcion": "TORNILLO METRICO 4-0.7X6 PH",
+        "marca_id": 2,
+        "precioCosto": "20.64",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200014,
+        "descripcion": "TORNILLO METRICO 4-0.7X8 PH",
+        "marca_id": 2,
+        "precioCosto": "22.88",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200015,
+        "descripcion": "TORNILLO METRICO 4-0.7Xl 0 PH",
+        "marca_id": 2,
+        "precioCosto": "25.27",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200016,
+        "descripcion": "TORNILLO METRICO 4-0.7Xl 2 PH",
+        "marca_id": 2,
+        "precioCosto": "27.51",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200017,
+        "descripcion": "TORNILLO METRICO 4-0.7Xl 8 PH",
+        "marca_id": 2,
+        "precioCosto": "32.15",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200018,
+        "descripcion": "TORNILLO METRICO 4-0.7X20 PH",
+        "marca_id": 2,
+        "precioCosto": "36.78",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200019,
+        "descripcion": "TORNILLO METRICO 4-0.7X30 PH",
+        "marca_id": 2,
+        "precioCosto": "48.3",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200020,
+        "descripcion": "TORNILLO METRICO 4-0.7X35 PH",
+        "marca_id": 2,
+        "precioCosto": "354.13",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200021,
+        "descripcion": "TORNILLO METRICO 4-0.7X40 PH",
+        "marca_id": 2,
+        "precioCosto": "59.96",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200022,
+        "descripcion": "TORNILLO METRICO 4-0.7X45 PH",
+        "marca_id": 2,
+        "precioCosto": "366.09",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200023,
+        "descripcion": "TORNILLO METRICO 4-0.7X50 PH",
+        "marca_id": 2,
+        "precioCosto": "72.07",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200024,
+        "descripcion": "TORNILLO METRICO 4-0.7X55 PH",
+        "marca_id": 2,
+        "precioCosto": "78.05",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200025,
+        "descripcion": "TORNILLO METRICO 4-0.7X60 PH",
+        "marca_id": 2,
+        "precioCosto": "384.03",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200026,
+        "descripcion": "TORNILLO METRICO 4-0.7X65 PH",
+        "marca_id": 2,
+        "precioCosto": "90.02",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200027,
+        "descripcion": "TORNILLO METRICO 4-0.7X70 PH",
+        "marca_id": 2,
+        "precioCosto": "399.0",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200028,
+        "descripcion": "TORNILLO METRICO 5-0.8x8 PH",
+        "marca_id": 2,
+        "precioCosto": "28.82",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200029,
+        "descripcion": "TORNILLO METRICO 5-0.8Xl 0 PH",
+        "marca_id": 2,
+        "precioCosto": "31.51",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200030,
+        "descripcion": "TORNILLO METRICO 5-0.8Xl 2 PH",
+        "marca_id": 2,
+        "precioCosto": "34.32",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200031,
+        "descripcion": "TORNILLO METRICO 5-0.8X15PH",
+        "marca_id": 2,
+        "precioCosto": "37.12",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200032,
+        "descripcion": "TORNILLO METRICO 5-0.8X18PH",
+        "marca_id": 2,
+        "precioCosto": "39.92",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200033,
+        "descripcion": "TORNILLO METRICO 5-0.8X2OPH",
+        "marca_id": 2,
+        "precioCosto": "45.42",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200034,
+        "descripcion": "TORNILLO METRICO 5-0.8X25PH",
+        "marca_id": 2,
+        "precioCosto": "52.37",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200035,
+        "descripcion": "TORNILLO METRICO 5-0.8X30PH",
+        "marca_id": 2,
+        "precioCosto": "59.33",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200036,
+        "descripcion": "TORNILLO METRICO 5-0.8X35PH",
+        "marca_id": 2,
+        "precioCosto": "66.28",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200037,
+        "descripcion": "TORNILLO METRICO 5-0.8X40PH",
+        "marca_id": 2,
+        "precioCosto": "73.12",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200038,
+        "descripcion": "TORNILLO METRICO 5-0.8X45PH",
+        "marca_id": 2,
+        "precioCosto": "80.07",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200039,
+        "descripcion": "TORNILLO METRICO 5-0.8X50PH",
+        "marca_id": 2,
+        "precioCosto": "87.03",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200040,
+        "descripcion": "TORNILLO METRICO 5-0.8X55PH",
+        "marca_id": 2,
+        "precioCosto": "93.98",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200041,
+        "descripcion": "TORNILLO METRICO 5-0.8X60PH",
+        "marca_id": 2,
+        "precioCosto": "100.93",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200042,
+        "descripcion": "TORNILLO METRICO 5-0.8X65PH",
+        "marca_id": 2,
+        "precioCosto": "107.88",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200043,
+        "descripcion": "TORNILLO METRICO 5-0.8X7OPH",
+        "marca_id": 2,
+        "precioCosto": "114.83",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200044,
+        "descripcion": "TORNILLO METRICO 6-1X10PH",
+        "marca_id": 2,
+        "precioCosto": "49.4",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200045,
+        "descripcion": "TORNILLO METRICO 6-1X12PH",
+        "marca_id": 2,
+        "precioCosto": "53.07",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200046,
+        "descripcion": "TORNILLO METRICO 6-1X15PH",
+        "marca_id": 2,
+        "precioCosto": "56.73",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200047,
+        "descripcion": "TORNILLO METRICO 6-1X18PH",
+        "marca_id": 2,
+        "precioCosto": "60.71",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200048,
+        "descripcion": "TORNILLO METRICO 6-1X30PH",
+        "marca_id": 2,
+        "precioCosto": "86.24",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200049,
+        "descripcion": "TORNILLO METRICO 6-1X35PH",
+        "marca_id": 2,
+        "precioCosto": "95.46",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200050,
+        "descripcion": "TORNILLO METRICO 6-1X40PH",
+        "marca_id": 2,
+        "precioCosto": "104.67",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200051,
+        "descripcion": "TORNILLO METRICO 6-1X45PH",
+        "marca_id": 2,
+        "precioCosto": "114.09",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200052,
+        "descripcion": "TORNILLO METRICO 6-1X50PH",
+        "marca_id": 2,
+        "precioCosto": "123.51",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200053,
+        "descripcion": "TORNILLO METRICO 6-1X55PH",
+        "marca_id": 2,
+        "precioCosto": "131.88",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200054,
+        "descripcion": "TORNILLO METRICO 6-1X60PH",
+        "marca_id": 2,
+        "precioCosto": "141.3",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200055,
+        "descripcion": "TORNILLO METRICO 6-1X65PH",
+        "marca_id": 2,
+        "precioCosto": "150.72",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200056,
+        "descripcion": "TORNILLO METRICO 6-1X70PH",
+        "marca_id": 2,
+        "precioCosto": "160.14",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200057,
+        "descripcion": "TORNILLO METRICO 8-1.25X18PH",
+        "marca_id": 2,
+        "precioCosto": "112.15",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200058,
+        "descripcion": "TORNILLO METRICO 8-1.25X35PH",
+        "marca_id": 2,
+        "precioCosto": "161.49",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200059,
+        "descripcion": "TORNILLO METRICO 8-1.25X55PH",
+        "marca_id": 2,
+        "precioCosto": "218.91",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200060,
+        "descripcion": "TORNILLO METRICO 8-1.25X65PH",
+        "marca_id": 2,
+        "precioCosto": "247.62",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200061,
+        "descripcion": "TORNILLO METRICO 8-1.25X70 PH",
+        "marca_id": 2,
+        "precioCosto": "262.87",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200062,
+        "descripcion": "TORNILLO METRICO 3-0.5X4 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "12.2",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200063,
+        "descripcion": "TORNILLO METRICO 3-0.5X5 CAB FRESAD√Ö",
+        "marca_id": 2,
+        "precioCosto": "13.19",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200064,
+        "descripcion": "TORNILLO METRICO 3-0.5X6 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "14.18",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200065,
+        "descripcion": "TORNILLO METRICO 3-0.5X8 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "16.15",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200066,
+        "descripcion": "TORNILLO METRICO 3-0.5XI 2 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "20.1",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200067,
+        "descripcion": "TORNILLO METRICO 3-0.5XI 5 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "22.43",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200068,
+        "descripcion": "TORNILLO METRICO 3-0.5XI 8 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "24.67",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200069,
+        "descripcion": "TORNILLO METRICO 3-0.5X20 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "28.04",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200070,
+        "descripcion": "TORNILLO METRICO 3-0.5X25 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "28.58",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200071,
+        "descripcion": "TORNILLO METRICO 3-0.5X30 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "32.85",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200072,
+        "descripcion": "TORNILLO METRICO 4-0.7X5 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "19.44",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200073,
+        "descripcion": "TORNILLO METRICO 4-0.7X8 CAB FRESAD√Ö",
+        "marca_id": 2,
+        "precioCosto": "22.88",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200074,
+        "descripcion": "TORNILLO METRICO 4-0.7XI 0 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "25.27",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200075,
+        "descripcion": "TORNILLO METRICO 4-0.7XI 2 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "27.51",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200076,
+        "descripcion": "TORNILLO METRICO 4-0.7XI 5 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "29.91",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200077,
+        "descripcion": "TORNILLO METRICO 4-0.7XI 8 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "32.15",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200078,
+        "descripcion": "TORNILLO METRICO 4-0.7X20 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "36.78",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200079,
+        "descripcion": "TORNILLO METRICO 4-0.7X30 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "48.3",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200080,
+        "descripcion": "TORNILLO METRICO 4-0.7X35 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "54.13",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200081,
+        "descripcion": "TORNILLO METRICO 4-0.7X45 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "66.09",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200082,
+        "descripcion": "TORNILLO METRICO 4-0.7X50 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "72.07",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200083,
+        "descripcion": "TORNILLO METRICO 4-0.7X55 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "78.05",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200084,
+        "descripcion": "TORNILLO METRICO 4-0.7X6O CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "84.03",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200085,
+        "descripcion": "TORNILLO METRICO 4-0.7X65 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "90.02",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200086,
+        "descripcion": "TORNILLO METRICO 4-0.7X70 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "96.0",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200087,
+        "descripcion": "TORNILLO METRICO 5-0.8X8 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "28.82",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200088,
+        "descripcion": "TORNILLO METRICO 5-0.8XI 2 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "34.32",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200089,
+        "descripcion": "TORNILLO METRICO 5-0.8XI 8 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "39.92",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200090,
+        "descripcion": "TORNILLO METRICO 5-0.8X25 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "52.37",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200091,
+        "descripcion": "TORNILLO METRICO 5-0.8X30 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "59.33",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200092,
+        "descripcion": "TORNILLO METRICO 5-0.8X35 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "66.28",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200093,
+        "descripcion": "TORNILLO METRICO 5-0.8X4O CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "73.12",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200094,
+        "descripcion": "TORNILLO METRICO 5-0.8X45 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "80.07",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200095,
+        "descripcion": "TORNILLO METRICO 5-0.8X50 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "87.03",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200096,
+        "descripcion": "TORNILLO METRICO 5-0.8X65 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "107.88",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200097,
+        "descripcion": "TORNILLO METRICO 6-1XI2 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "53.07",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200098,
+        "descripcion": "TORNILLO METRICO 6-1XI5 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "56.73",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200099,
+        "descripcion": "TORNILLO METRICO 6-1XI8 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "60.71",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200100,
+        "descripcion": "TORNILLO METRICO 6-1X30 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "86.24",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200101,
+        "descripcion": "TORNILLO METRICO 6-1X35 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "95.46",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200102,
+        "descripcion": "TORNILLO METRICO 6-1X40 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "104.67",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200103,
+        "descripcion": "TORNILLO METRICO 6-1X45 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "114.09",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200104,
+        "descripcion": "TORNILLO METRICO 6-1X50 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "123.51",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200105,
+        "descripcion": "TORNILLO METRICO 6-1X55 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "131.88",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200106,
+        "descripcion": "TORNILLO METRICO 6-1X60 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "141.3",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200107,
+        "descripcion": "TORNILLO METRICO 6-1X65 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "150.72",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200108,
+        "descripcion": "TORNILLO METRICO 6-1X70 CAB FRESADA",
+        "marca_id": 2,
+        "precioCosto": "160.14",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200109,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 1/8XI/4",
+        "marca_id": 2,
+        "precioCosto": "9.51",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200110,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE I/8X5/I6",
+        "marca_id": 2,
+        "precioCosto": "10.11",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200111,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE I/8X3/8",
+        "marca_id": 2,
+        "precioCosto": "10.52",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200112,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE I/8XI/2",
+        "marca_id": 2,
+        "precioCosto": "12.13",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200113,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 1/8X5/8",
+        "marca_id": 2,
+        "precioCosto": "12.52",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200114,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 1/8X3/4",
+        "marca_id": 2,
+        "precioCosto": "13.12",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200115,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE I/8X7/8",
+        "marca_id": 2,
+        "precioCosto": "14.07",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200116,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 1/8XI",
+        "marca_id": 2,
+        "precioCosto": "15.18",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200117,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE I/8XII/4",
+        "marca_id": 2,
+        "precioCosto": "20.86",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200118,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE I/8XI3/4",
+        "marca_id": 2,
+        "precioCosto": "28.2",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200119,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 1/8X2",
+        "marca_id": 2,
+        "precioCosto": "31.54",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200120,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/32X1/2",
+        "marca_id": 2,
+        "precioCosto": "19.45",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200121,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/32X5/8",
+        "marca_id": 2,
+        "precioCosto": "20.59",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200122,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/32X3/4",
+        "marca_id": 2,
+        "precioCosto": "24.02",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200123,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/32X7/8",
+        "marca_id": 2,
+        "precioCosto": "28.6",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200124,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/32Xl",
+        "marca_id": 2,
+        "precioCosto": "30.88",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200125,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/32Xll/4",
+        "marca_id": 2,
+        "precioCosto": "35.46",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200126,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/32Xl1/2",
+        "marca_id": 2,
+        "precioCosto": "38.9",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200127,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/32Xl3/4",
+        "marca_id": 2,
+        "precioCosto": "44.61",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200128,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/32X2",
+        "marca_id": 2,
+        "precioCosto": "49.19",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200129,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6Xl/4",
+        "marca_id": 2,
+        "precioCosto": "18.63",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200130,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6X5/l6",
+        "marca_id": 2,
+        "precioCosto": "20.59",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200131,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6X3/8",
+        "marca_id": 2,
+        "precioCosto": "21.57",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200132,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6Xl/2",
+        "marca_id": 2,
+        "precioCosto": "24.51",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200133,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6X5/8",
+        "marca_id": 2,
+        "precioCosto": "26.47",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200134,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6X3/4",
+        "marca_id": 2,
+        "precioCosto": "30.4",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200135,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6X7/8",
+        "marca_id": 2,
+        "precioCosto": "32.36",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200136,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6Xl",
+        "marca_id": 2,
+        "precioCosto": "37.26",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200137,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6Xl1/4",
+        "marca_id": 2,
+        "precioCosto": "40.2",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200138,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6Xl1/2",
+        "marca_id": 2,
+        "precioCosto": "49.02",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200139,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6Xl3/4",
+        "marca_id": 2,
+        "precioCosto": "53.93",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200140,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6X2",
+        "marca_id": 2,
+        "precioCosto": "59.81",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200141,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 3/l6X21/2",
+        "marca_id": 2,
+        "precioCosto": "70.6",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200142,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE l/4X3/8",
+        "marca_id": 2,
+        "precioCosto": "47.06",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200143,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE l/4Xl/2",
+        "marca_id": 2,
+        "precioCosto": "52.95",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200144,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE l/4X5/8",
+        "marca_id": 2,
+        "precioCosto": "56.87",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200145,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE l/4X3/4",
+        "marca_id": 2,
+        "precioCosto": "62.75",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200146,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE l/4X7/8",
+        "marca_id": 2,
+        "precioCosto": "67.65",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200147,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE l/4Xl",
+        "marca_id": 2,
+        "precioCosto": "76.48",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200148,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE l/4Xl1/4",
+        "marca_id": 2,
+        "precioCosto": "85.3",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200149,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE l/4Xl1/2",
+        "marca_id": 2,
+        "precioCosto": "97.07",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200150,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE l/4Xl3/4",
+        "marca_id": 2,
+        "precioCosto": "106.88",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200151,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE I /4X2",
+        "marca_id": 2,
+        "precioCosto": "111.78",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200152,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 1/4X21/2",
+        "marca_id": 2,
+        "precioCosto": "142.17",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200153,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE I/4X3",
+        "marca_id": 2,
+        "precioCosto": "167.67",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200154,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/I6XI/2",
+        "marca_id": 2,
+        "precioCosto": "71.02",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200155,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/16X5/8",
+        "marca_id": 2,
+        "precioCosto": "71.89",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200156,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/16X3/4",
+        "marca_id": 2,
+        "precioCosto": "89.21",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200157,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/l6X7/8",
+        "marca_id": 2,
+        "precioCosto": "97.01",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200158,
+        "descripcion": "TORNILLOS P/METALES C/TAN0UE 5/16X1",
+        "marca_id": 2,
+        "precioCosto": "106.54",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200159,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/16X1l/4",
+        "marca_id": 2,
+        "precioCosto": "113.46",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200160,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/I6XI I/2",
+        "marca_id": 2,
+        "precioCosto": "133.39",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200161,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/I6XI 3/4",
+        "marca_id": 2,
+        "precioCosto": "151.57",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200162,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/16X2",
+        "marca_id": 2,
+        "precioCosto": "162.83",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200163,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/I6X2I/2",
+        "marca_id": 2,
+        "precioCosto": "198.35",
+        "utilidad_id": 2
+    },
+    {
+        "cantidad": 200,
+        "categoria_id": 1,
+        "codigo": 200164,
+        "descripcion": "TORNILLOS P/METALES C/TANQUE 5/I6X3",
+        "marca_id": 2,
+        "precioCosto": "227.79",
+        "utilidad_id": 2
+    }
+]
