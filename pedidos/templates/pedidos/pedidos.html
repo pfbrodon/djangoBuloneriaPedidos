@@ -1,29 +1,24 @@
-{% extends 'stock/base.html' %} {% block content %}
+{% extends 'pedidos/base.html' %} {% block content %}
 {% load static %}
-<link rel="stylesheet" href="{% stock/static '/css/stock.css' %}">
+<link rel="stylesheet" href="{% static '/css/stock.css' %}">
 
 
 
 <div class="container">
     <div class="row">
-        <div class="col-12"><h3>CRUD STOCK</h3></div>
+        <div class="col-12"><h3>WAFER PEDIDOS</h3></div>
     </div>
     <div class="row">
-        <div class="col-md-6 d-flex align-items-center" style="background-color:  #e3e3e3; padding: 5px;">
-                <form class="d-flex align-items-center" method="post" action="{% url 'buscar' %}" style="padding: 5px;" >
-                    {%csrf_token%}
-                    <div class="d-flex align-items-center justify-content-center"style="padding: 5px;" >
-                        {{ form }}
-                    </div>
-                    <div style="padding: 5px;">
-                        <button type="submit" class="btn btn-warning" >BUSCAR</button>
-                    </div>
-                </form>
-        </div>
-        <div class="col-md-6 d-flex align-items-center" style="background-color: #e3e3e3; padding: 5px; " >
-            <div style=" padding: 5px;">
-                <a class="btn btn-success" href="{% url 'nuevo' %}">NUEVO</a>
-            </div>
+        <div class="col-md-12 d-flex align-items-center" style="background-color:  #e3e3e3; padding: 5px;">
+            <form class="d-flex align-items-center" method="post" action="{% url 'buscar' %}" style="padding: 5px;" >
+                {%csrf_token%}
+                <div class="d-flex align-items-center justify-content-center"style="padding: 5px;" >
+                    {{ form }}
+                </div>
+                <div style="padding: 5px;">
+                    <button type="submit" class="btn btn-warning" >BUSCAR</button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="row">
@@ -60,10 +55,6 @@
                                     <td class="columUtilidad">{{ producto.utilidad.utilDescripcion}}</td>
                                     <td class="columMoneda">${{ producto.precioPublico}}</td>
                                     <td class="centrarbotones">
-                                        <div>   
-                                            <a class="btn btn-primary btn-sm " href="{% url 'actualizar' id=producto.id %}">EDITAR</a>
-                                            <a class="btn btn-danger btn-sm" href="{% url 'eliminar' id=producto.id %}">ELIMINAR</a>
-                                        </div>
                                     </td>
                                     <!-- Agrega más celdas según las propiedades de tu modelo Producto -->
                                 </tr>
