@@ -17,7 +17,7 @@ def pedidos(request):
         productos = Producto.objects.all()
         for producto in productos:
             producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
-        return render(request, 'stock.html', {
+        return render(request, 'stock/stock.html', {
             'form': form,
             'productos': productos
             })
