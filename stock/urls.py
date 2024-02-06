@@ -10,5 +10,8 @@ urlpatterns = [
     path('stock/nuevo/', views.nuevo, name='nuevo'),
     path('stock/eliminar/<int:id>/', views.eliminar, name='eliminar'),
     path('stock/actualizar/<int:id>/', views.actualizar, name='actualizar'),
-    path('buscar/', views.buscar, name='buscar'),
+    path('stock/buscar/', views.buscar, name='buscar'),
+    path('pedidos/', views.pedidos, name='pedidos'),
+    path('pedidos/buscarp', views.pedidos, name='buscarp'),
+
 ]
