@@ -1,10 +1,11 @@
+import json
 from django.shortcuts import render, redirect, get_object_or_404, HttpResponse
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
-from .models import Producto
+from .models import Producto, Productopedido
 from .forms import NuevoForm, ProductoForm, ProductoBusqueda
 from django.template.defaultfilters import floatformat
 from django.db.models import Q
@@ -175,7 +176,20 @@ def sumarAPedido(request, id):
     producto = get_object_or_404(Producto, id=id) 
     if request.method == 'GET':
         print(producto)
-        print(request.GET)
-        for key, value in producto.__dict__.items():
-            print(f"{key}: {value}")
-        return HttpResponse("Producto impreso en la consola. Puedes revisar la salida en la consola del servidor.")
+        producto_dict = {
+            'id': producto.id,
+            'nombre': producto.descripcion,
+            'precio': producto.precioPublico,
+            # Agrega más campos según tus necesidades
+        }
+        # Convertir el diccionario a JSON
+        producto_json = json.dumps(producto_dict, indent=2)
+        # Imprimir el JSON y los parámetros GET
+        print("Producto en formato JSON:")
+        print(producto_json)
+
+        # Guardar el JSON en la tabla DetallePedido
+        #detalle_pedido = Productopedido(producto_json=producto_json)
+        #detalle_pedido.save()
+
+        return HttpResponse("Producto en formato JSON guardado en la tabla. Puedes revisar la salida en la consola del servidor.")
