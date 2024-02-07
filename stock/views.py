@@ -19,7 +19,6 @@ def signup(request):
         return render(request, 'signup.html', {
         'form': UserCreationForm
         })
-
     else:
         if request.POST['password1'] == request.POST['password2']:
             try:
@@ -168,3 +167,15 @@ def buscarp(request):
                 'form': form, 
                 'productos': productos
                 })
+
+##############################################################################################################
+
+@login_required     
+def sumarAPedido(request, id):
+    producto = get_object_or_404(Producto, id=id) 
+    if request.method == 'GET':
+        print(producto)
+        print(request.GET)
+        for key, value in producto.__dict__.items():
+            print(f"{key}: {value}")
+        return HttpResponse("Producto impreso en la consola. Puedes revisar la salida en la consola del servidor.")
