@@ -9,6 +9,7 @@ from .models import Producto, Productopedido
 from .forms import NuevoForm, ProductoForm, ProductoBusqueda
 from django.template.defaultfilters import floatformat
 from django.db.models import Q
+from django.http import JsonResponse
 # Create your views here.
 
 def home(request):
@@ -192,4 +193,5 @@ def sumarAPedido(request, id):
         #detalle_pedido = Productopedido(producto_json=producto_json)
         #detalle_pedido.save()
 
-        return HttpResponse("Producto en formato JSON guardado en la tabla. Puedes revisar la salida en la consola del servidor.")
+        #return HttpResponse(status=200)
+        return JsonResponse({'status': 'OK'})

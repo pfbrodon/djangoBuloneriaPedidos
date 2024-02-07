@@ -22,3 +22,10 @@ function sumarCantidad(productoId) {
         cantidadElement.innerText = cantidadActual + 1;
     }
 }
+
+$(document).ready(function () {
+    $.get('/ruta_de_tu_vista/' + producto_id + '/', function (data) {
+        // Realiza acciones adicionales según sea necesario
+        console.log('Operación exitosa en el servidor');
+    });
+});
