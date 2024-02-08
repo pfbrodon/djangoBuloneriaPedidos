@@ -119,6 +119,21 @@
     outline-style:solid;
     outline-width: 1px;
 }
+
+.btn-dark{
+    width: 25px;
+    height: 25px;;
+    padding: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+    justify-content: center;
+    vertical-align: middle;
+    outline-color: dimgrey;
+    outline-style:solid;
+    outline-width: 1px;
+}
 /* Ancho del botón */
 
 
@@ -137,4 +152,11 @@
     border: 1px solid dimgrey; /* Color del contorno */
     padding: 0.375rem 0.75rem; /* Ajusta el relleno según sea necesario */
     border-radius: 7px; /* Ajusta el radio de borde según sea necesario */
+}
+
+th {
+    font-size: 12px; /* Tamaño de fuente deseado */
+}
+td {
+    font-size: 12px; /* Tamaño de fuente deseado */
 }

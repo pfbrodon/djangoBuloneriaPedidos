@@ -17,8 +17,8 @@
             <td>{{value.nombre}}</td>
             <td>{{value.acumulado}}</td>
             <td>
-                <a href="{% url 'Add' id=value.producto_id %}" class="badge btn btn-dark badge-dark">+</a>
-                <a href="{% url 'Sub' id=value.producto_id %}" class="badge btn btn-dark badge-dark">-</a>
+                <a href="{% url 'Add' id=value.producto_id %}" class="badge btn btn-dark ">+</a>
+                <a href="{% url 'Sub' id=value.producto_id %}" class="badge btn btn-dark ">-</a>
             </td>
         </tr>
         {% endfor %}
