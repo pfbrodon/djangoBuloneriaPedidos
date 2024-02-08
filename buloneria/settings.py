@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'root',
         'PASSWORD': 'HbG3C4GDe2-6BdB2CEehbeECb-b5e1Dg',
-        'HOST': 'monorail.proxy.rlwy.net',
+        'HOST': 'djangobuloneriapedidos-production.up.railway.app',
         'PORT': '28358'
     }
 }
