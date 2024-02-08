@@ -202,3 +202,38 @@ def sumarAPedido(request, id):
     print(producto.descripcion)
     if request.method == 'GET':
         return redirect ('pedidos')
+    
+#############################################################################################
+
+# Create your views here.
+from stock.carrito import Carrito
+
+
+
+def tienda(request):
+    #return HttpResponse("Hola Pythonizando")
+    productos = Producto.objects.all()
+    return render(request, "tienda.html", {'productos':productos})
+
+def agregar_producto(request, id):
+    carrito = Carrito(request)
+    producto = Producto.objects.get(id=id)
+    carrito.agregar(producto)
+    return redirect("Tienda")
+
+def eliminar_producto(request, id):
+    carrito = Carrito(request)
+    producto = Producto.objects.get(id=id)
+    carrito.eliminar(producto)
+    return redirect("Tienda")
+
+def restar_producto(request,id):
+    carrito = Carrito(request)
+    producto = Producto.objects.get(id=id)
+    carrito.restar(producto)
+    return redirect("Tienda")
+
+def limpiar_carrito(request):
+    carrito = Carrito(request)
+    carrito.limpiar()
+    return redirect("Tienda")
