@@ -171,7 +171,7 @@ def buscarp(request):
                 })
 
 ##############################################################################################################
-
+'''
 @login_required     
 def sumarAPedido(request, id):
     producto = get_object_or_404(Producto, id=id) 
@@ -194,4 +194,11 @@ def sumarAPedido(request, id):
         #detalle_pedido.save()
 
         #return HttpResponse(status=200)
-        return JsonResponse({'status': 'OK'})
+        return JsonResponse({'status': 'OK'})'''
+    
+    
+def sumarAPedido(request, id):
+    producto = Producto.objects.get(id=id)
+    print(producto.descripcion)
+    if request.method == 'GET':
+        return redirect ('pedidos')
