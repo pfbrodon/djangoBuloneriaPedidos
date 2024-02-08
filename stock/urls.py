@@ -14,7 +14,6 @@ urlpatterns = [
     path('pedidos/', views.pedidos, name='pedidos'),
     path('pedidos/buscarp', views.buscarp, name='buscarp'),
     #########################################
-    path('tienda/', views.tienda, name="Tienda"),
     path('agregar/<int:id>/', views.agregar_producto, name="Add"),
     path('eliminar/<int:id>/', views.eliminar_producto, name="Del"),
     path('restar/<int:id>/', views.restar_producto, name="Sub"),

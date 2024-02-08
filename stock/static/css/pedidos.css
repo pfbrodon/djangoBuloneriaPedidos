@@ -134,14 +134,21 @@
     outline-style:solid;
     outline-width: 1px;
 }
-/* Ancho del botón */
 
-
-
-
-#demo {
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.93);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.93);
+.btn-warning{
+    width: 60px;
+    height: 36px;;
+    padding: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+    justify-content: center;
+    vertical-align: middle;
+    outline-color: dimgrey;
+    outline-style:solid;
+    outline-width: 1px;
+    color:rgb(73, 73, 73);
 }
 .encabezados{
     text-align: center;
