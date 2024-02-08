@@ -81,13 +81,24 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'wafersas',
         'USER': 'root',
         'PASSWORD': '12345678',
         'HOST': 'localhost',
+        'PORT': '3306'
+    }
+}'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'u653598207_wafersas',
+        'USER': 'u653598207_root',
+        'PASSWORD': 'Buloneria123456',
+        'HOST': '154.49.247.154',
         'PORT': '3306'
     }
 }
