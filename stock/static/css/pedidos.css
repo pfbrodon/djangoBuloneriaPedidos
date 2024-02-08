@@ -89,52 +89,35 @@
 }
 
 
-.btn {
-    width: 58px;
-    height: 26px;
+.btn-danger{
+    width: 60px;
+    height: 25px;;
     padding: 1px;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: bold;
     text-align: center;
     line-height: 22px;
-    outline-color: dimgrey;
-    outline-style:solid;
-    outline-width: 1px;
-
-}
-
-.btn-warning{
-    width: 60px;
-    height: 35px;;
-    padding: 1px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 33px;
-    display: flex;
     justify-content: center;
     vertical-align: middle;
     outline-color: dimgrey;
     outline-style:solid;
     outline-width: 1px;
-
 }
 
 
 .btn-success{
-    width: 35px;
-    height: 35px;;
+    width: 60px;
+    height: 25px;;
     padding: 1px;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: bold;
     text-align: center;
-    line-height: 30px;
+    line-height: 22px;
     justify-content: center;
     vertical-align: middle;
     outline-color: dimgrey;
     outline-style:solid;
     outline-width: 1px;
-
 }
 /* Ancho del botón */
 

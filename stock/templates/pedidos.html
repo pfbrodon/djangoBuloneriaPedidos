@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col" style="background-color: #e3e3e3; padding: 5px;">
+        <div class="col-8" style="background-color: #e3e3e3; padding: 5px;">
             <div class="table-responsive"> 
                 <form action="">
                     {%csrf_token%}
@@ -50,8 +50,7 @@
                                     <td class="columMoneda">${{ producto.precioPublico}}</td>
                                     <td class="centrarbotones">
                                         <div class="btn-group">
-                                            <a class="btn btn-success" href="#" onclick="restarCantidad('{{ producto.id }}')">+</a>
-                                            <a class="btn btn-success" href="{% url 'sumarAPedido' id=producto.id %}" onclick="sumarCantidad('{{ producto.id }}')">-</a>    
+                                            <a href="{% url 'Add' id=producto.id %}" class="btn btn-success">AGREGAR</a>
                                         </div>
                                     </td>
                                     <!-- Agrega más celdas según las propiedades de tu modelo Producto -->
@@ -61,10 +60,11 @@
                     </table>
                 </form>
             </div>
-        
+        </div>
+        <div class="col-4" style="background-color: #e3e3e3; padding: 5px;">
+            {% include "carrito.html" %}
         </div>
     </div>
 </div>
-<script src="{% static '/js/pedidos.js' %}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 {% endblock %}

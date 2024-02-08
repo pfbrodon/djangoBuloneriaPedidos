@@ -10,6 +10,8 @@ from .forms import NuevoForm, ProductoForm, ProductoBusqueda
 from django.template.defaultfilters import floatformat
 from django.db.models import Q
 from django.http import JsonResponse
+from stock.carrito import Carrito
+
 # Create your views here.
 
 def home(request):
@@ -168,47 +170,10 @@ def buscarp(request):
             return render(request, 'pedidos.html', {
                 'form': form, 
                 'productos': productos
-                })
-
-##############################################################################################################
-'''
-@login_required     
-def sumarAPedido(request, id):
-    producto = get_object_or_404(Producto, id=id) 
-    if request.method == 'GET':
-        print(producto)
-        producto_dict = {
-            'id': producto.id,
-            'nombre': producto.descripcion,
-            'precio': producto.precioPublico,
-            # Agrega más campos según tus necesidades
-        }
-        # Convertir el diccionario a JSON
-        producto_json = json.dumps(producto_dict, indent=2)
-        # Imprimir el JSON y los parámetros GET
-        print("Producto en formato JSON:")
-        print(producto_json)
-
-        # Guardar el JSON en la tabla DetallePedido
-        #detalle_pedido = Productopedido(producto_json=producto_json)
-        #detalle_pedido.save()
-
-        #return HttpResponse(status=200)
-        return JsonResponse({'status': 'OK'})'''
-    
-    
-def sumarAPedido(request, id):
-    producto = Producto.objects.get(id=id)
-    print(producto.descripcion)
-    if request.method == 'GET':
-        return redirect ('pedidos')
-    
+                })    
 #############################################################################################
 
 # Create your views here.
-from stock.carrito import Carrito
-
-
 
 def tienda(request):
     #return HttpResponse("Hola Pythonizando")
@@ -219,21 +184,21 @@ def agregar_producto(request, id):
     carrito = Carrito(request)
     producto = Producto.objects.get(id=id)
     carrito.agregar(producto)
-    return redirect("Tienda")
+    return redirect("pedidos")
 
 def eliminar_producto(request, id):
     carrito = Carrito(request)
     producto = Producto.objects.get(id=id)
     carrito.eliminar(producto)
-    return redirect("Tienda")
+    return redirect("pedidos")
 
 def restar_producto(request,id):
     carrito = Carrito(request)
     producto = Producto.objects.get(id=id)
     carrito.restar(producto)
-    return redirect("Tienda")
+    return redirect("pedidos")
 
 def limpiar_carrito(request):
     carrito = Carrito(request)
     carrito.limpiar()
-    return redirect("Tienda")
+    return redirect("pedidos")
