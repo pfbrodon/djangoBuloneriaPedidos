@@ -83,6 +83,18 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'wafersas',
+        'USER': 'postgres',
+        'PASSWORD': '12345678',
+        'HOST': 'localhost',
+        'PORT': '5432'
+    }
+}
+
+################BASE MYSQL RAILWAY###################
+'''DATABASES = {
+    'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'railway',
         'USER': 'root',
@@ -90,8 +102,8 @@ DATABASES = {
         'HOST': 'monorail.proxy.rlwy.net',
         'PORT': '28358'
     }
-}
-
+}'''
+###############BASE LOCAL MYSQL##################
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -102,7 +114,7 @@ DATABASES = {
         'PORT': '3306'
     }
 }'''
-
+##########BASE MYSQL HOSTINGER#################
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
