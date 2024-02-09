@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['djangobuloneriapedidos-production.up.railway.app','127.0.0.1']
 
-CORS_ALLOWED_ORIGINS = [
+CSRF_TRUSTED_ORIGINS  = [
     "https://djangobuloneriapedidos-production.up.railway.app",
     # Otros orígenes permitidos si es necesario
 ]
