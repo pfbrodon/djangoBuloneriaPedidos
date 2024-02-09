@@ -27,7 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['djangobuloneriapedidos-production.up.railway.app']
 
-
+CORS_ALLOWED_ORIGINS = [
+    "https://djangobuloneriapedidos-production.up.railway.app",
+    # Otros orígenes permitidos si es necesario
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,8 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'stock',
-#    'crispy_forms',
-#   'crispy_bootstrap5'
 ]
 #CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
