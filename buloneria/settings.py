@@ -80,8 +80,20 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
+#postgresql://postgres:2dEfbfG3fddfFfCEGeC4D4eC5FG52D*e@viaduct.proxy.rlwy.net:48851/railway
 DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '2dEfbfG3fddfFfCEGeC4D4eC5FG52D*e',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '48851'
+    }
+}
+
+###############POSTGRES LOCALHOST#######################
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'wafersas',
@@ -90,7 +102,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '5432'
     }
-}
+}'''
 
 ################BASE MYSQL RAILWAY###################
 '''DATABASES = {
