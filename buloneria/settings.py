@@ -24,13 +24,18 @@ SECRET_KEY = 'django-insecure-u@1gp*4jph!n^^hci9rxq@ls92ho*unxt)5me^x7^b00$2a$1&
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+#####EN TEST##################
 
-ALLOWED_HOSTS = ['djangobuloneriapedidos-production.up.railway.app','127.0.0.1']
+ALLOWED_HOSTS = []
 
-CSRF_TRUSTED_ORIGINS  = [
-    "https://djangobuloneriapedidos-production.up.railway.app",
+
+####EN PRODUCCION###############################
+#ALLOWED_HOSTS = ['djangobuloneriapedidos-production.up.railway.app','127.0.0.1']
+
+#CSRF_TRUSTED_ORIGINS  = [
+#    "https://djangobuloneriapedidos-production.up.railway.app",
     # Otros orígenes permitidos si es necesario
-]
+#]
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,9 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stock',
 ]
-#CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
-#CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -82,7 +85,7 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 #postgresql://postgres:2dEfbfG3fddfFfCEGeC4D4eC5FG52D*e@viaduct.proxy.rlwy.net:48851/railway
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
@@ -91,7 +94,7 @@ DATABASES = {
         'HOST': 'viaduct.proxy.rlwy.net',
         'PORT': '48851'
     }
-}
+}'''
 
 ###############POSTGRES LOCALHOST#######################
 '''DATABASES = {
@@ -117,7 +120,7 @@ DATABASES = {
     }
 }'''
 ###############BASE LOCAL MYSQL##################
-'''DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'wafersas',
@@ -126,7 +129,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306'
     }
-}'''
+}
 ##########BASE MYSQL HOSTINGER#################
 '''DATABASES = {
     'default': {
