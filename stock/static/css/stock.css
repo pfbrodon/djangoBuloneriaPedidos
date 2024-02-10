@@ -119,6 +119,7 @@
 }
 
 .btn-warning{
+    
     width: 60px;
     height: 35px;;
     padding: 1px;
@@ -132,7 +133,6 @@
     outline-color: dimgrey;
     outline-style:solid;
     outline-width: 1px;
-
 }
 
 .btn-success{

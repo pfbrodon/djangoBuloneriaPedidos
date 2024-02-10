@@ -6,7 +6,7 @@
             </tr>
             <tr>
                 <th scope="col">DESCRIPCION</th>
-                <th scope="col">PRECIO</th>
+                <th scope="col" class="carroHeaderPrecio">PRECIO</th>
                 <th scope="col">CANTIDAD</th>
             </tr>
         </thead>
@@ -15,8 +15,8 @@
             {% for key, value in request.session.carrito.items %}
             <tr>
                 <td class="colDescripcion">{{value.nombre}}</td>
-                <td class="colAcumulado">{{value.acumulado}}</td>
-                <td class="colBotones justify-content-center">
+                <td class="columNum">{{value.acumulado}}</td>
+                <td class="centrarbotones">
                     <div class="btn-group">
                         <a href="{% url 'Add' id=value.producto_id %}" class="btn btn-dark btn-primary">+</a>
                         <a href="{% url 'Sub' id=value.producto_id %}" class="btn btn-dark btn-secondary">-</a>    
