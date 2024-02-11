@@ -25,6 +25,9 @@
 .columMarca{
     text-align: center;
 }
+.columDescripcion{
+    text-align: center;
+}
 
 .columUtilidad{
     text-align: center;
@@ -49,7 +52,7 @@
 .table td:nth-child(1),
 .table th:nth-child(1) {
     width: 5%;
-    text-align: center;
+    /*text-align: center;*/
     /* Porcentaje deseado para la tercera columna */
 }
 
