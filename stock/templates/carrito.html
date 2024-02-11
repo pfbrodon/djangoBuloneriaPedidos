@@ -7,7 +7,7 @@
             <tr>
                 <th scope="col">DESCRIPCION</th>
                 <th scope="col" class="carroHeaderPrecio">PRECIO</th>
-                <th scope="col">CANTIDAD</th>
+                <th scope="col" class="text-center">CANTIDAD</th>
             </tr>
         </thead>
         <tbody>
@@ -16,7 +16,7 @@
             <tr>
                 <td class="colDescripcion">{{value.nombre}}</td>
                 <td class="columNum">{{value.acumulado}}</td>
-                <td class="centrarbotones"> 
+                <td class="centrarbotonesCarro"> 
                     <div class="btn-group">
                         <a href="{% url 'Add' id=value.producto_id %}" class="btn btn-dark btn-primary">+</a>
                         <a href="{% url 'Sub' id=value.producto_id %}" class="btn btn-dark btn-secondary">-</a>    
