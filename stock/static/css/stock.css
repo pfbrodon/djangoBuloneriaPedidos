@@ -21,6 +21,9 @@
 .columMarca{
     text-align: center;
 }
+.columDescripcion{
+    text-align: left;
+}
 
 .columUtilidad{
     text-align: center;
@@ -67,10 +70,13 @@
     /* Porcentaje deseado para la cuarta columna */
 }
 
-.table td:nth-child(5),
-.table th:nth-child(5) {
-    width: 26%;
+.table td:nth-child(5) {
+    width: 40%;
     text-align: left;
+}
+.table th:nth-child(5) {
+    width: 40%;
+    text-align: center;
     /* Porcentaje deseado para la cuarta columna */
 }
 
@@ -83,7 +89,7 @@
 
 .table td:nth-child(7),
 .table th:nth-child(7) {
-    width: 5%;
+    width: 8%;
     /* Porcentaje deseado para la cuarta columna */
 }
 
@@ -119,6 +125,7 @@
 }
 
 .btn-warning{
+    
     width: 60px;
     height: 35px;;
     padding: 1px;
@@ -132,7 +139,6 @@
     outline-color: dimgrey;
     outline-style:solid;
     outline-width: 1px;
-
 }
 
 .btn-success{
