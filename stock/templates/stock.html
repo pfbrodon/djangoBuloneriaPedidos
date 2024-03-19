@@ -15,15 +15,14 @@
                     <div class="d-flex align-items-center justify-content-center"style="padding: 5px;" >
                         {{ form }}
                     </div>
-                    <div style="padding: 5px;">
+                    <div style="padding: 5px;" class="btn-group">
                         <button type="submit" class="btn btn-warning" >BUSCAR</button>
+                        <a class="btn btn-success" href="{% url 'nuevo' %}">NUEVO</a>
                     </div>
                 </form>
         </div>
         <div class="col-md-6 d-flex align-items-center" style="background-color: #e3e3e3; padding: 5px; " >
-            <div style=" padding: 5px;">
-                <a class="btn btn-success" href="{% url 'nuevo' %}">NUEVO</a>
-            </div>
+            <!--Para agregar algo-->
         </div>
     </div>
     <div class="row">
@@ -60,7 +59,7 @@
                                     <td class="columUtilidad">{{ producto.utilidad.utilDescripcion}}</td>
                                     <td class="columMoneda">${{ producto.precioPublico}}</td>
                                     <td class="centrarbotones">
-                                        <div>   
+                                        <div class="btn-group">   
                                             <a class="btn btn-primary btn-sm " href="{% url 'actualizar' id=producto.id %}">EDITAR</a>
                                             <a class="btn btn-danger btn-sm" href="{% url 'eliminar' id=producto.id %}">ELIMINAR</a>
                                         </div>
