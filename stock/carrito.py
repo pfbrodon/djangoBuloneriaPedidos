@@ -24,8 +24,22 @@ class Carrito:
         self.guardar_carrito()
 
     def guardar_carrito(self):
+        carrito_dict = {
+            str(producto_id): {
+                "producto_id": producto["producto_id"],
+                "nombre": producto["nombre"],
+                "acumulado": producto["acumulado"],
+                "cantidad": producto["cantidad"],
+            }
+            for producto_id, producto in self.carrito.items()
+        }
         self.session["carrito"] = self.carrito
         self.session.modified = True
+        
+        # Imprimir el diccionario en la consola
+        print("Carrito guardado:")
+        print(carrito_dict)
+
 
     def eliminar(self, producto):
         id = str(producto.id)

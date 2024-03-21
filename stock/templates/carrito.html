@@ -18,6 +18,7 @@
                 <td class="columNum">{{value.acumulado}}</td>
                 <td class="centrarbotonesCarro"> 
                     <div class="btn-group">
+                        {{value.cantidad}}
                         <a href="{% url 'Add' id=value.producto_id %}" class="btn btn-dark btn-primary">+</a>
                         <a href="{% url 'Sub' id=value.producto_id %}" class="btn btn-dark btn-secondary">-</a>    
                     </div>
