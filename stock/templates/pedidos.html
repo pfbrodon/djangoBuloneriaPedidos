@@ -1,29 +1,30 @@
-{% extends 'base.html' %} {% block content %}
-{% load static %}
+{% extends 'base.html' %} {% block content %} {% load static %}
 <link rel="stylesheet" href="{% static '/css/pedidos.css' %}">
 
 
 
 <div class="container">
     <div class="row">
-        <div class="col-12"><h3>WAFER PEDIDOS</h3></div>
+        <div class="col-12">
+            <h3>WAFER PEDIDOS</h3>
+        </div>
     </div>
     <div class="row">
         <div class="col-md-12 d-flex align-items-center" style="background-color:  #e3e3e3; padding: 5px;">
-            <form class="d-flex align-items-center" method="post" action="{% url 'buscarp' %}" style="padding: 5px;" >
+            <form class="d-flex align-items-center" method="post" action="{% url 'buscarp' %}" style="padding: 5px;">
                 {%csrf_token%}
-                <div class="d-flex align-items-center justify-content-center"style="padding: 5px;" >
+                <div class="d-flex align-items-center justify-content-center" style="padding: 5px;">
                     {{ form }}
                 </div>
                 <div style="padding: 5px;">
-                    <button type="submit" class="btn btn-warning" >BUSCAR</button>
+                    <button type="submit" class="btn btn-warning">BUSCAR</button>
                 </div>
             </form>
         </div>
     </div>
     <div class="row">
         <div class="col-8" style="background-color: #e3e3e3; padding: 5px;">
-            <div class="table-responsive"> 
+            <div class="table-responsive">
                 <form action="">
                     {%csrf_token%}
                     <table id="tabla" class="table table-striped table-bordered table-hover">
@@ -33,7 +34,7 @@
                                 <th scope="col">MARCA</th>
                                 <th scope="col">CODIGO</th>
                                 <th scope="col">DESCRIPCION</th>
-                                <th scope="col">CANTIDAD</th>                                
+                                <th scope="col">CANTIDAD</th>
                                 <th scope="col">P VENTA</th>
                                 <th scope="col">ACCIONES</th>
                                 <!-- Agrega más columnas según las propiedades de tu modelo Producto -->
@@ -41,20 +42,20 @@
                         </thead>
                         <tbody>
                             {% for producto in productos %}
-                                <tr class="contenido">
-                                    <td scope="row" class="columCategoria">{{ producto.categoria.catNom }}</td>
-                                    <td class="columMarca">{{ producto.marca.marcaNom }}</td>
-                                    <td class="columNum">{{ producto.codigo }}</td>
-                                    <td class="columDescripcion">{{ producto.descripcion }}</td>
-                                    <td class="columNum" id="cantidad{{ producto.id }}">{{ producto.cantidad }}</td>
-                                    <td class="columMoneda">${{ producto.precioPublico}}</td>
-                                    <td class="centrarbotones">
-                                        <div class="btn-group">
-                                            <a href="{% url 'Add' id=producto.id %}" class="btn btn-success">AGREGAR</a>
-                                        </div>
-                                    </td>
-                                    <!-- Agrega más celdas según las propiedades de tu modelo Producto -->
-                                </tr>
+                            <tr class="contenido">
+                                <td scope="row" class="columCategoria">{{ producto.categoria.catNom }}</td>
+                                <td class="columMarca">{{ producto.marca.marcaNom }}</td>
+                                <td class="columNum">{{ producto.codigo }}</td>
+                                <td class="columDescripcion">{{ producto.descripcion }}</td>
+                                <td class="columNum" id="cantidad{{ producto.id }}">{{ producto.cantidad }}</td>
+                                <td class="columMoneda">${{ producto.precioPublico}}</td>
+                                <td class="centrarbotones">
+                                    <div class="btn-group">
+                                        <a href="{% url 'Add' id=producto.id %}" class="btn btn-success">AGREGAR</a>
+                                    </div>
+                                </td>
+                                <!-- Agrega más celdas según las propiedades de tu modelo Producto -->
+                            </tr>
                             {% endfor %}
                         </tbody>
                     </table>
@@ -62,9 +63,8 @@
             </div>
         </div>
         <div class="col-4" style="background-color: #e3e3e3; padding: 5px;">
-            {% include "carrito.html" %}
+            <--!{% include "carrito.html" %} </div>
+
         </div>
-    </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-{% endblock %}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        {% endblock %}
