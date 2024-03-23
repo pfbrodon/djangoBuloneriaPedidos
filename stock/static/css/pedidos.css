@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.carroHeaderPrecio{
+.carroHeaderPrecio {
     text-align: center;
 }
 
@@ -18,24 +18,26 @@
     text-align: center;
 }
 
-.columCategoria{
+.columCategoria {
     text-align: center;
 }
 
-.columMarca{
-    text-align: center;
-}
-.columDescripcion{
+.columMarca {
     text-align: center;
 }
 
-.columUtilidad{
+.columDescripcion {
+    text-align: center;
+}
+
+.columUtilidad {
     text-align: center;
 }
 
 .centrarbotones {
     text-align: center;
 }
+
 .centrarbotonesCarro {
     text-align: center;
     width: 100px;
@@ -48,6 +50,7 @@
     line-height: 27px;
     padding: 2px;
 }
+
 .table-responsive {
     text-align: center;
     align-items: center;
@@ -99,10 +102,10 @@
     /* Porcentaje deseado para la cuarta columna */
 }
 
-
-.btn-danger{
+.btn-danger {
     width: 60px;
-    height: 25px;;
+    height: 25px;
+    ;
     padding: 1px;
     font-size: 11px;
     font-weight: bold;
@@ -111,14 +114,14 @@
     justify-content: center;
     vertical-align: middle;
     outline-color: dimgrey;
-    outline-style:solid;
+    outline-style: solid;
     outline-width: 1px;
 }
 
-
-.btn-success{
+.btn-success {
     width: 60px;
-    height: 25px;;
+    height: 25px;
+    ;
     padding: 1px;
     font-size: 11px;
     font-weight: bold;
@@ -127,13 +130,14 @@
     justify-content: center;
     vertical-align: middle;
     outline-color: dimgrey;
-    outline-style:solid;
+    outline-style: solid;
     outline-width: 1px;
 }
 
-.btn-dark{
+.btn-dark {
     width: 25px;
-    height: 25px;;
+    height: 25px;
+    ;
     padding: 1px;
     font-size: 14px;
     font-weight: bold;
@@ -142,13 +146,14 @@
     justify-content: center;
     vertical-align: middle;
     outline-color: dimgrey;
-    outline-style:solid;
+    outline-style: solid;
     outline-width: 1px;
 }
 
-.btn-warning{
+.btn-warning {
     width: 65px;
-    height: 36px;;
+    height: 36px;
+    ;
     padding: 1px;
     font-size: 14px;
     font-weight: bold;
@@ -157,24 +162,55 @@
     justify-content: center;
     vertical-align: middle;
     outline-color: dimgrey;
-    outline-style:solid;
+    outline-style: solid;
     outline-width: 1px;
-    color:rgb(73, 73, 73);
+    color: rgb(73, 73, 73);
 }
-.encabezados{
+
+.encabezados {
     text-align: center;
 }
 
 .form-control-outline {
     width: 400px;
-    border: 1px solid dimgrey; /* Color del contorno */
-    padding: 0.375rem 0.75rem; /* Ajusta el relleno según sea necesario */
-    border-radius: 7px; /* Ajusta el radio de borde según sea necesario */
+    border: 1px solid dimgrey;
+    /* Color del contorno */
+    padding: 0.375rem 0.75rem;
+    /* Ajusta el relleno según sea necesario */
+    border-radius: 7px;
+    /* Ajusta el radio de borde según sea necesario */
 }
 
 th {
-    font-size: 12px; /* Tamaño de fuente deseado */
+    font-size: 12px;
+    /* Tamaño de fuente deseado */
 }
+
 td {
-    font-size: 12px; /* Tamaño de fuente deseado */
+    font-size: 12px;
+    /* Tamaño de fuente deseado */
+}
+
+.collapse-content {
+    position: absolute;
+    top: 100%;
+    /* Colocar el contenido justo debajo del botón */
+    right: 0;
+    /* Colocar el contenido a la derecha del contenedor */
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    /* Añadimos una transición para suavizar el efecto de colapso */
+}
+
+.expanded {
+    width: 100%;
+    /* Ampliar el contenido al 100% del ancho */
+    height: auto;
+    /* Permitir que la altura se ajuste automáticamente */
+    padding: 5px;
+    /* Añadir padding para un mejor aspecto */
+    box-sizing: border-box;
+    /* Incluir el padding en el ancho total */
 }
