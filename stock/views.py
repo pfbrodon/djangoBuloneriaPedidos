@@ -202,3 +202,8 @@ def limpiar_carrito(request):
     carrito = Carrito(request)
     carrito.limpiar()
     return redirect("pedidos")
+
+def imprimir_carrito(request):
+    carrito = Carrito(request)
+    carrito.imprimir()
+    return redirect("pedidos")

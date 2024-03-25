@@ -18,4 +18,6 @@ urlpatterns = [
     path('eliminar/<int:id>/', views.eliminar_producto, name="Del"),
     path('restar/<int:id>/', views.restar_producto, name="Sub"),
     path('limpiar/', views.limpiar_carrito, name="CLS"),
+    path('imprimir/', views.imprimir_carrito, name="impresion"),
+
 ]

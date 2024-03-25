@@ -11,20 +11,18 @@
             </tr>
         </thead>
         <tbody>
-            {% if request.session.carrito.items %}
-            {% for key, value in request.session.carrito.items %}
+            {% if request.session.carrito.items %} {% for key, value in request.session.carrito.items %}
             <tr>
                 <td class="colDescripcion">{{value.nombre}}</td>
                 <td class="columNum">{{value.acumulado}}</td>
-                <td class="centrarbotonesCarro"> 
+                <td class="centrarbotonesCarro">
                     <div class="btn-group">
                         <a href="{% url 'Add' id=value.producto_id %}" class="btn btn-dark btn-primary">+</a>
-                        <a href="{% url 'Sub' id=value.producto_id %}" class="btn btn-dark btn-secondary">-</a>    
+                        <a href="{% url 'Sub' id=value.producto_id %}" class="btn btn-dark btn-secondary">-</a>
                     </div>
                 </td>
             </tr>
-            {% endfor %}
-            {% else %}
+            {% endfor %} {% else %}
             <tr>
                 <td colspan="3">
                     <div class="alert alert-danger text-center"> Sin Productos </div>
@@ -40,6 +38,6 @@
     <hr>
     <div class="row text-center">
         <div class="col-6"><a href="{% url 'CLS' %}" class="btn btn-danger">LIMPIAR</a></div>
-        <div class="col-6"><a href="#" class="btn btn-success">GUARDAR</a></div>
+        <div class="col-6"><a href="{% url 'impresion' %}" class="btn btn-success">GUARDAR</a></div>
     </div>
 </div>

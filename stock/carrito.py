@@ -26,6 +26,8 @@ class Carrito:
     def guardar_carrito(self):
         self.session["carrito"] = self.carrito
         self.session.modified = True
+        print("Contenido del carrito:")
+        
 
     def eliminar(self, producto):
         id = str(producto.id)
@@ -44,3 +46,14 @@ class Carrito:
     def limpiar(self):
         self.session["carrito"] = {}
         self.session.modified = True
+        
+    def imprimir(self):
+        self.session["carrito"] = {}
+        self.session.modified = True
+        print("Contenido del carrito:")
+        for item_id, item_info in self.carrito.items():
+            print(f"ID del producto: {item_info['producto_id']}")
+            print(f"Nombre del producto: {item_info['nombre']}")
+            print(f"Cantidad: {item_info['cantidad']}")
+            print(f"Acumulado: {item_info['acumulado']}")
+            print("---------------------------")
