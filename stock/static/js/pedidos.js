@@ -10,6 +10,7 @@ function restarCantidad(productoId) {
         cantidadElement.innerText = cantidadActual - 1;
     }
 }
+
 function sumarCantidad(productoId) {
     // Obtén el elemento de la celda de cantidad
     var cantidadElement = document.getElementById('cantidad' + productoId);
@@ -23,8 +24,8 @@ function sumarCantidad(productoId) {
     }
 }
 
-$(document).ready(function () {
-    $.get('/pedidos/sumarAPedido/' + producto_id + '/', function (data) {
+$(document).ready(function() {
+    $.get('/pedidos/sumarAPedido/' + producto_id + '/', function(data) {
         // Realiza acciones adicionales según sea necesario
         console.log('Operación exitosa en el servidor');
     });
