@@ -11,6 +11,7 @@ class Carrito:
             self.carrito = self.session["carrito"]
         else:
             self.carrito = carrito
+            
 
     def agregar(self, producto):
         id = str(producto.id)
