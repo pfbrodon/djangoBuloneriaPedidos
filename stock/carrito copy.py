@@ -74,10 +74,10 @@ class Carrito:
             print("Contenido del diccionario:")'''
 ####Imprimir el carrito como un archivo Json
     def imprimir(self, nombre_archivo):
-        self.carrito['usuario'] = {
+        '''self.carrito['usuario'] = {
             'username': self.usuario.username,
             'user_id': self.usuario.id
-        }
+        }'''
         print(f"Usuario: {self.usuario.username}")
         print(f"ID: {self.usuario.id}")
         print("Contenido del carrito:")

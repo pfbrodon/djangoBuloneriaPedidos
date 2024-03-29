@@ -2,25 +2,35 @@
     "5": {
         "producto_id": 5,
         "nombre": "TORNILLO AUTOPERFORANTE C/WAFER P/AGUJA 8X1/2",
-        "acumulado": 18.76,
-        "cantidad": 1
+        "acumulado": 37.52,
+        "cantidad": 2
     },
-    "6": {
-        "producto_id": 6,
-        "nombre": "TORNILLO AUTOPERFORANTE C/WAFER P/AGUJA 8Xl",
-        "acumulado": 94.98,
-        "cantidad": 3
+    "11": {
+        "producto_id": 11,
+        "nombre": "TORNILLO METRICO 3-0.5Xl 5 PH",
+        "acumulado": 24.67,
+        "cantidad": 1
     },
     "9": {
         "producto_id": 9,
         "nombre": "TORNILLO METRICO 3-0.5X6 PH",
-        "acumulado": 31.2,
-        "cantidad": 2
+        "acumulado": 15.6,
+        "cantidad": 1
     },
     "12": {
         "producto_id": 12,
         "nombre": "TORNILLO METRICO 3-0.5Xl 8 PH",
         "acumulado": 27.14,
         "cantidad": 1
+    },
+    "14": {
+        "producto_id": 14,
+        "nombre": "TORNILLO METRICO 3-0.5X25 PH",
+        "acumulado": 94.32000000000001,
+        "cantidad": 3
+    },
+    "usuario": {
+        "username": "pfbrodon",
+        "user_id": 1
     }
 }
