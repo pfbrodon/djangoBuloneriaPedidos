@@ -205,5 +205,6 @@ def limpiar_carrito(request):
 
 def imprimir_carrito(request):
     carrito = Carrito(request)
-    carrito.imprimir()
+    nombre_archivo="pedido.json"
+    carrito.imprimir(nombre_archivo)
     return redirect("pedidos")

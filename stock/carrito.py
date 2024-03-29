@@ -3,6 +3,7 @@ class Carrito:
     def __init__(self, request):
         self.request = request
         self.session = request.session
+        self.usuario = request.user
         carrito = self.session.get("carrito")
         if not carrito:
             self.session["carrito"] = {}
@@ -28,7 +29,7 @@ class Carrito:
         self.session["carrito"] = self.carrito
         self.session.modified = True
         print("Contenido del carrito:")
-        self.imprimir()
+        #self.imprimir() #anulado hasta que se modifique finaly se pase el nombre del archivo desde la vista
                 
 
     def eliminar(self, producto):
@@ -48,7 +49,7 @@ class Carrito:
     def limpiar(self):
         self.session["carrito"] = {}
         self.session.modified = True
-        
+####Imprimir y Borrar carrito        
     '''def imprimir(self):
         self.session["carrito"] = {}
         self.session.modified = True
@@ -60,8 +61,8 @@ class Carrito:
             print(f"Cantidad: {item_info['cantidad']}")
             print(f"Acumulado: {item_info['acumulado']}")
             print("---------------------------")'''
-            
-    def imprimir(self):
+####Solo imprimir el carrito          
+    '''def imprimir(self):
         print("Contenido del carrito:")
         for item_id, item_info in self.carrito.items():
             print("---------------------------")
@@ -70,3 +71,13 @@ class Carrito:
             print(f"Cantidad: {item_info['cantidad']}")
             print(f"Acumulado: {item_info['acumulado']}")
             print("---------------------------")
+            print("Contenido del diccionario:")'''
+####Imprimir el carrito como un archivo Json
+    def imprimir(self, nombre_archivo):
+        print(f"Usuario: {self.usuario.username}")
+        print(f"ID: {self.usuario.id}")
+        print("Contenido del carrito:")
+        for item_id, item_info in self.carrito.items():
+            print(f"{item_id}: {item_info}")
+        with open(nombre_archivo, 'w') as archivo:
+            json.dump(self.carrito, archivo, indent=4)
