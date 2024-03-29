@@ -203,8 +203,12 @@ def limpiar_carrito(request):
     carrito.limpiar()
     return redirect("pedidos")
 
-def imprimir_carrito(request):
+'''def imprimir_carrito(request):
     carrito = Carrito(request)
     nombre_archivo="pedido.json"
     carrito.imprimir(nombre_archivo)
+    return redirect("pedidos")'''
+def imprimir_carrito(request):
+    carrito = Carrito(request)
+    carrito.imprimir()
     return redirect("pedidos")
