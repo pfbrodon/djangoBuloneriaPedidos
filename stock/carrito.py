@@ -1,5 +1,5 @@
 import json
-from .models import Pedidostest
+from .models import Pedidostest, Pedidosnumtest
 class Carrito:
     def __init__(self, request):
         self.request = request
@@ -67,6 +67,12 @@ class Carrito:
     def imprimir(self):
         print("Contenido del carrito:")
         nuevoPedido={}
+        # Guardar Numero de Pedido generado automaticamente en el campo de la tabla
+        numpedido = Pedidosnumtest.objects.create(
+            pedidoUser=self.usuario.username,
+            pedidoIdUser=self.usuario.id,
+        )
+
         for item_id, item_info in self.carrito.items():
             nuevoPedido[item_id] = {}  # Crear un diccionario vacío para cada elemento del carrito
             nuevoPedido[item_id]['user'] = self.usuario.username
@@ -78,8 +84,8 @@ class Carrito:
             
             # Crear una instancia del modelo Pedido y guardarla en la base de datos
             pedido = Pedidostest.objects.create(
-                usuario=self.usuario.username,
-                id_usuario=self.usuario.id,
+                #usuario=self.usuario.username,
+                #id_usuario=self.usuario.id,
                 id_producto=item_info['producto_id'],
                 nombre_producto=item_info['nombre'],
                 cantidad=item_info['cantidad'],

@@ -46,13 +46,18 @@ class Productopedido(models.Model):
     precioPublico= models.FloatField(default=0.0)
     subtotalPedido= models.FloatField(default=0.0)
 
+class Pedidosnumtest(models.Model):
+    pedidoNum= models.IntegerField(default=0, auto_created=True)
+    pedidoUser = models.CharField(max_length=50)
+    pedidoIdUser = models.IntegerField()
+
 class Pedidostest(models.Model):
-    usuario = models.CharField(max_length=100)
-    id_usuario = models.IntegerField()
+    numPedido= models.ForeignKey(Pedidosnumtest, on_delete=models.CASCADE)
     id_producto = models.IntegerField()
     nombre_producto = models.CharField(max_length=100)
     cantidad = models.IntegerField()
     acumulado = models.DecimalField(max_digits=10, decimal_places=2)
+
 
 def __str__(self):
         return self.title +'-by '+ self.user.username #muestra el titulo de la tarea en la administracion de django
