@@ -82,14 +82,6 @@ class Carrito:
         print("Número de Pedido:", numero_pedido)
         #nuevoPedido={}
         for item_id, item_info in self.carrito.items():
-            '''nuevoPedido[item_id] = {}  # Crear un diccionario vacío para cada elemento del carrito
-            nuevoPedido[item_id]['user'] = self.usuario.username
-            nuevoPedido[item_id]['user_id'] = self.usuario.id
-            nuevoPedido[item_id]['productoId'] = item_info['producto_id']
-            nuevoPedido[item_id]['descripcion'] = item_info['nombre']
-            nuevoPedido[item_id]['cantidad'] = item_info['cantidad']
-            nuevoPedido[item_id]['valorAcum'] = item_info['acumulado']'''
-            
             # Crear una instancia del modelo Pedido y guardarla en la base de datos
             pedido = Pedidostest.objects.create(
                 numPedido=nuevo_pedido,
@@ -98,38 +90,3 @@ class Carrito:
                 cantidad=item_info['cantidad'],
                 acumulado=item_info['acumulado']
             )
-
-            
-            '''print("---------------------------")
-            print(f"Usuario: {self.usuario.username}")
-            print(f"Id: {self.usuario.id}")
-            print(f"ID del producto: {item_info['producto_id']}")
-            print(f"Nombre del producto: {item_info['nombre']}")
-            print(f"Cantidad: {item_info['cantidad']}")
-            print(f"Acumulado: {item_info['acumulado']}")
-            print("---------------------------")
-        # Imprimir el contenido del diccionario creado
-        print("Contenido del diccionario:")
-        print (nuevoPedido)
-        for item_id, item_info in nuevoPedido.items():
-            print("---------------------------")
-            print(f"Usuario: {item_info['user']}")
-            print(f"ID Usuario: {item_info['user_id']}")
-            print(f"ID del producto: {item_info['productoId']}")
-            print(f"Nombre del producto: {item_info['descripcion']}")
-            print(f"Cantidad: {item_info['cantidad']}")
-            print(f"Acumulado: {item_info['valorAcum']}")
-            print("---------------------------")'''
-####Imprimir el carrito como un archivo Json
-    '''def imprimir(self, nombre_archivo):
-        self.carrito['usuario'] = {
-            'username': self.usuario.username,
-            'user_id': self.usuario.id
-        }
-        print(f"Usuario: {self.usuario.username}")
-        print(f"ID: {self.usuario.id}")
-        print("Contenido del carrito:")
-        for item_id, item_info in self.carrito.items():
-            print(f"{item_id}: {item_info}")
-        with open(nombre_archivo, 'w') as archivo:
-            json.dump(self.carrito, archivo, indent=4)'''
