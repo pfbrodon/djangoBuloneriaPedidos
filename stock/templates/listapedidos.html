@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h3>WAFER PEDIDOS</h3>
+            <h3>LISTADOS PEDIDOS</h3>
         </div>
     </div>
     <div class="row">
@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-8" style="background-color: #e3e3e3; padding: 5px;">
+        <div class="col-12" style="background-color: #e3e3e3; padding: 5px;">
             <div class="table-responsive">
                 <form action="">
                     {%csrf_token%}
@@ -61,9 +61,6 @@
                     </table>
                 </form>
             </div>
-        </div>
-        <div class="col-4" style="background-color: #e3e3e3; padding: 5px;">
-            {% include "carrito.html" %}
         </div>
     </div>
 </div>
