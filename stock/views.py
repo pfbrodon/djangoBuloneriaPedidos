@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
-from .models import Producto, Productopedido
+from .models import Producto, Pedidosnumtest, Pedidostest
 from .forms import NuevoForm, ProductoForm, ProductoBusqueda
 from django.template.defaultfilters import floatformat
 from django.db.models import Q
@@ -152,16 +152,12 @@ def pedidos(request):
 ####################################################################################
 @login_required
 def listapedidos(request):
-    form = ProductoBusqueda()
     if request.method == 'GET': 
         print('va el GET')
-        productos = Producto.objects.all()
-        for producto in productos:
-            producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
-        return render(request, 'listapedidos.html', {
-            'form': form,
-            'productos': productos
-            })
+        pedidos = Pedidosnumtest.objects.all()
+        return render(request, 'listapedidos.html',{
+            'pedidos':pedidos 
+        })
         
 #def buscar(request):
 #    # Puedes usar some_view aquí
