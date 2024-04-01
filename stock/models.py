@@ -31,25 +31,7 @@ class Producto(models.Model):
     utilidad = models.ForeignKey(Utilidad, on_delete=models.CASCADE)
     precioPublico= models.FloatField(default=0.0)
 
-class Pedidos(models.Model):
-    pedioNum = models.IntegerField(default=0, auto_created=True)
-    pedidoDescripcion= models.CharField(max_length=100)
-    pedidoFecha = models.DateTimeField(auto_now_add=True)
-    totalPedido= models.FloatField(default=0.0)
-
-
-class Productopedido(models.Model):
-    numpedido = models.ForeignKey(Pedidos, on_delete=models.CASCADE)
-    categoria = models.ForeignKey(Categorias, on_delete=models.CASCADE)
-    marca = models.ForeignKey(Marcas, on_delete=models.CASCADE)
-    codigo = models.IntegerField()
-    descripcion = models.CharField(max_length = 150)
-    cantidad = models.IntegerField()
-    precioPublico= models.FloatField(default=0.0)
-    subtotalPedido= models.FloatField(default=0.0)
-
 class Pedidosnumtest(models.Model):
-    pedidoNum= models.IntegerField(default=0, auto_created=True)
     pedidoUser = models.CharField(max_length=50)
     pedidoIdUser = models.IntegerField()
     pedidoFecha = models.DateTimeField(auto_now_add=True)
@@ -59,11 +41,11 @@ class Pedidosnumtest(models.Model):
             last_user_id = self.pedidoIdUser
             last_object = Pedidosnumtest.objects.order_by('id').last()
             if last_object:
-                last_id = (last_object.id)+1
-                self.pedidoCodigo = f'C{str(last_user_id).zfill(3)}P{str(last_id).zfill(4)}'
+                self.pedidoCodigo = f'C{str(last_user_id).zfill(3)}P{str((last_object.id)+1).zfill(4)}'
             else:
-                self.pedidoCodigo = f'C{str(last_user_id).zfill(3)}P{str(last_id).zfill(4)}'
+                self.pedidoCodigo = f'C{str(last_user_id).zfill(3)}P0001'
         super(Pedidosnumtest, self).save(*args, **kwargs)
+
             
 class Pedidostest(models.Model):
     numPedido= models.ForeignKey(Pedidosnumtest, on_delete=models.CASCADE)
