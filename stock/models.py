@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 # Create your models here.
 class Utilidad(models.Model):
@@ -50,7 +52,19 @@ class Pedidosnumtest(models.Model):
     pedidoNum= models.IntegerField(default=0, auto_created=True)
     pedidoUser = models.CharField(max_length=50)
     pedidoIdUser = models.IntegerField()
-
+    pedidoFecha = models.DateTimeField(auto_now_add=True)
+    pedidoCodigo = models.CharField(max_length=10, unique=True)
+    def save(self, *args, **kwargs):
+        if not self.pedidoCodigo:
+            last_user_id = self.pedidoIdUser
+            last_object = Pedidosnumtest.objects.order_by('id').last()
+            if last_object:
+                last_id = (last_object.id)+1
+                self.pedidoCodigo = f'C{str(last_user_id).zfill(3)}P{str(last_id).zfill(4)}'
+            else:
+                self.pedidoCodigo = f'C{str(last_user_id).zfill(3)}P{str(last_id).zfill(4)}'
+        super(Pedidosnumtest, self).save(*args, **kwargs)
+            
 class Pedidostest(models.Model):
     numPedido= models.ForeignKey(Pedidosnumtest, on_delete=models.CASCADE)
     id_producto = models.IntegerField()
