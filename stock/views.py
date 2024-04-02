@@ -158,11 +158,16 @@ def listapedidos(request):
         return render(request, 'listapedidos.html',{
             'pedidos':pedidos 
         })
-        
-#def buscar(request):
-#    # Puedes usar some_view aquí
-#    return buscar(request)
+###################################################################################
+@login_required
+def pedidodetalle(request, id):
+    pedido= get_object_or_404 (Pedidosnumtest, id=id)
+    productosPedido = Pedidostest.objects.filter(numPedido_id=pedido.id)
+    return render(request, 'pedidodetalle.html',{
+        'productosPedido':productosPedido
+    })
 
+###################################################################################
 def buscarp(request):
     if request.method=='POST':
         form=ProductoBusqueda(request.POST)

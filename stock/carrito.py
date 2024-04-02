@@ -1,4 +1,3 @@
-import json
 from .models import Pedidostest, Pedidosnumtest
 class Carrito:
     def __init__(self, request):

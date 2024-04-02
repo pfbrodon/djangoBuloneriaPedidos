@@ -14,6 +14,7 @@ urlpatterns = [
     path('pedidos/', views.pedidos, name='pedidos'),
     path('pedidos/buscarp', views.buscarp, name='buscarp'),
     path('listapedidos/', views.listapedidos, name='listapedidos'),
+    path('listapedidos/pedidodetalle/<int:id>', views.pedidodetalle, name='pedidodetalle'),
     #########################################
     path('agregar/<int:id>/', views.agregar_producto, name="Add"),
     path('eliminar/<int:id>/', views.eliminar_producto, name="Del"),

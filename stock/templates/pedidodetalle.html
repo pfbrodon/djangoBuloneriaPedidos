@@ -1,0 +1,63 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<link rel="stylesheet" href="{% static '/css/pedidodetalle.css' %}">
+
+<div class="container">
+    <div class="row">
+        <div class="col-3 text-center" style="background-color: #e3e3e3; padding: 5px;">
+            <h3>xxxx </h3>
+        </div>
+
+        <div class="col-6 text-center" style="background-color: #e3e3e3; padding: 5px;">
+            <h3>DETALLE DE PEDIDO </h3>
+        </div>
+        <div class="col-3 text-center" style="background-color: #e3e3e3; padding: 5px;">
+            <h3>xxx </h3>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-12" style="background-color: #e3e3e3; padding: 5px;">
+            <div class="table-responsive">
+                <form action="">
+                    {%csrf_token%}
+                    <table id="tablaProductoPedido" class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr class="encabezados">
+                                <th scope="col">NUMPEDIDO</th>
+                                <th scope="col">ID PRODUCTO</th>
+                                <th scope="col" class="text-center">NOMBRE PRODUCTO</th>
+                                <th scope="col">CANTIDAD</th>
+                                <th scope="col">ACUMULADO</th>
+                                <th scope="col">TAREAS</th>
+
+                                <!-- Agrega más columnas según las propiedades de tu modelo Producto -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for productopedido in productosPedido %}
+                            <tr class="contenido">
+                                <td scope="row">{{ productopedido.numPedido.pedidoCodigo }}</td>
+                                <td>{{ productopedido.id_producto }}</td>
+                                <td>{{ productopedido.nombre_producto }}</td>
+                                <td>{{ productopedido.cantidad }}</td>
+                                <td>{{ productopedido.acumulado }}</td>
+                                <td>
+                                    <div class="btn-group">
+                                        <a href="" class="btn btn-success">S/ASIG</a>
+                                        <a href="" class="btn btn-danger">S/ASIG</a>
+                                    </div>
+                                </td>
+                                <!-- Agrega más celdas según las propiedades de tu modelo Producto -->
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+{% endblock %}

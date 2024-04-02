@@ -2,6 +2,22 @@
     text-align: center;
 }
 
+.col-3 {
+    text-align: center;
+}
+
+.col-6 {
+    text-align: center;
+}
+
+.carroHeaderPrecio {
+    text-align: center;
+}
+
+.columMoneda {
+    text-align: right;
+}
+
 .encabezado {
     text-align: center;
 }
@@ -10,7 +26,19 @@
     text-align: center;
 }
 
+.columCategoria {
+    text-align: center;
+}
+
+.columMarca {
+    text-align: center;
+}
+
 .columDescripcion {
+    text-align: center;
+}
+
+.columUtilidad {
     text-align: center;
 }
 
@@ -45,13 +73,14 @@
 
 .table td:nth-child(2),
 .table th:nth-child(2) {
-    width: 8%;
+    width: 10%;
     /* Porcentaje deseado para la cuarta columna */
 }
 
 .table td:nth-child(3),
 .table th:nth-child(3) {
-    width: 8%;
+    width: 45%;
+    text-align: left;
     /* Porcentaje deseado para la cuarta columna */
 }
 
@@ -64,14 +93,7 @@
 
 .table td:nth-child(5),
 .table th:nth-child(5) {
-    width: 30%;
-    text-align: center;
-    /* Porcentaje deseado para la cuarta columna */
-}
-
-.table td:nth-child(6),
-.table th:nth-child(6) {
-    width: 30%;
+    width: 8%;
     text-align: center;
     /* Porcentaje deseado para la cuarta columna */
 }
@@ -156,12 +178,12 @@
 }
 
 th {
-    font-size: 12px;
+    font-size: 11px;
     /* Tamaño de fuente deseado */
 }
 
 td {
-    font-size: 12px;
+    font-size: 11px;
     /* Tamaño de fuente deseado */
 }
 
