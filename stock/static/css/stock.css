@@ -14,18 +14,19 @@
     text-align: center;
 }
 
-.columCategoria{
+.columCategoria {
     text-align: center;
 }
 
-.columMarca{
+.columMarca {
     text-align: center;
 }
-.columDescripcion{
+
+.columDescripcion {
     text-align: left;
 }
 
-.columUtilidad{
+.columUtilidad {
     text-align: center;
 }
 
@@ -34,12 +35,13 @@
 }
 
 .table {
-    font-size: 13px;
+    font-size: 12px;
     width: 100%;
     border-collapse: collapse;
     line-height: 27px;
     padding: 2px;
 }
+
 .table-responsive {
     text-align: center;
     align-items: center;
@@ -74,6 +76,7 @@
     width: 40%;
     text-align: left;
 }
+
 .table th:nth-child(5) {
     width: 40%;
     text-align: center;
@@ -104,6 +107,7 @@
     width: 5%;
     /* Porcentaje deseado para la cuarta columna */
 }
+
 .table td:nth-child(10),
 .table th:nth-child(10) {
     width: 15%;
@@ -119,15 +123,14 @@
     text-align: center;
     line-height: 22px;
     outline-color: dimgrey;
-    outline-style:solid;
+    outline-style: solid;
     outline-width: 1px;
-
 }
 
-.btn-warning{
-    
+.btn-warning {
     width: 60px;
-    height: 35px;;
+    height: 35px;
+    ;
     padding: 1px;
     font-size: 12px;
     font-weight: bold;
@@ -137,13 +140,14 @@
     justify-content: center;
     vertical-align: middle;
     outline-color: dimgrey;
-    outline-style:solid;
+    outline-style: solid;
     outline-width: 1px;
 }
 
-.btn-success{
+.btn-success {
     width: 60px;
-    height: 35px;;
+    height: 35px;
+    ;
     padding: 1px;
     font-size: 12px;
     font-weight: bold;
@@ -153,10 +157,11 @@
     justify-content: center;
     vertical-align: middle;
     outline-color: dimgrey;
-    outline-style:solid;
+    outline-style: solid;
     outline-width: 1px;
-
 }
+
+
 /* Ancho del botón */
 
 #button-addon1 {
@@ -177,13 +182,17 @@
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.93);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.93);
 }
-.encabezados{
+
+.encabezados {
     text-align: center;
 }
 
 .form-control-outline {
     width: 400px;
-    border: 1px solid dimgrey; /* Color del contorno */
-    padding: 0.375rem 0.75rem; /* Ajusta el relleno según sea necesario */
-    border-radius: 7px; /* Ajusta el radio de borde según sea necesario */
+    border: 1px solid dimgrey;
+    /* Color del contorno */
+    padding: 0.375rem 0.75rem;
+    /* Ajusta el relleno según sea necesario */
+    border-radius: 7px;
+    /* Ajusta el radio de borde según sea necesario */
 }
