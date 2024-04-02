@@ -45,7 +45,6 @@ class Pedidosnumtest(models.Model):
             else:
                 self.pedidoCodigo = f'C{str(last_user_id).zfill(3)}P0001'
         super(Pedidosnumtest, self).save(*args, **kwargs)
-
             
 class Pedidostest(models.Model):
     numPedido= models.ForeignKey(Pedidosnumtest, on_delete=models.CASCADE)

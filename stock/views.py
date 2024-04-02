@@ -6,7 +6,7 @@ from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from django.db import IntegrityError
 from .models import Producto, Pedidosnumtest, Pedidostest
-from .forms import NuevoForm, ProductoForm, ProductoBusqueda
+from .forms import NuevoForm, ProductoForm, ProductoBusqueda, ProductoCantidad
 from django.template.defaultfilters import floatformat
 from django.db.models import Q
 from django.http import JsonResponse
@@ -140,13 +140,16 @@ def buscar(request):
 @login_required
 def pedidos(request):
     form = ProductoBusqueda()
+    formCant= ProductoCantidad()
     if request.method == 'GET': 
         print('va el GET')
         productos = Producto.objects.all()
         for producto in productos:
             producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
+            formCant = ProductoCantidad(initial={'descripcion': producto.cantidad})
         return render(request, 'pedidos.html', {
             'form': form,
+            'formCant':formCant,
             'productos': productos
             })
 ####################################################################################
@@ -195,10 +198,14 @@ def tienda(request):
     return render(request, "tienda.html", {'productos':productos})
 
 def agregar_producto(request, id):
-    carrito = Carrito(request)
-    producto = Producto.objects.get(id=id)
-    carrito.agregar(producto)
-    return redirect("pedidos")
+        #if request.method == 'POST':
+        #   formCant = ProductoBusqueda(request.POST)
+        #    if formCant.is_valid():
+        #        cantidad = formCant.cleaned_data['cantidad']################
+                carrito = Carrito(request)
+                producto = Producto.objects.get(id=id)
+                carrito.agregar(producto)
+                return redirect("pedidos")
 
 def eliminar_producto(request, id):
     carrito = Carrito(request)
@@ -222,7 +229,7 @@ def limpiar_carrito(request):
     nombre_archivo="pedido.json"
     carrito.imprimir(nombre_archivo)
     return redirect("pedidos")'''
-def imprimir_carrito(request):
+def guardar_carrito(request):
     carrito = Carrito(request)
-    carrito.imprimir()
+    carrito.guardarInDb()
     return redirect("pedidos")

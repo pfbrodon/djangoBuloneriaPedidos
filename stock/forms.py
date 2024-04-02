@@ -47,3 +47,11 @@ class ProductoBusqueda(forms.Form):
         label= '',
         widget=forms.TextInput(attrs={'class': 'form-control-outline','style': 'width: 300px;','placeholder':'Ingrese la Busqueda'})
     )
+
+class ProductoCantidad(forms.Form):
+    descripcion = forms.IntegerField(
+        max_value=9999,
+        min_value=0,
+        label='',        
+        widget=forms.NumberInput(attrs={'class': 'form-control-outline','style': 'width: 75px;'})
+    )
