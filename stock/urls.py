@@ -16,7 +16,8 @@ urlpatterns = [
     path('listapedidos/', views.listapedidos, name='listapedidos'),
     path('listapedidos/pedidodetalle/<int:id>', views.pedidodetalle, name='pedidodetalle'),
     #########################################
-    path('agregar/<int:id>/', views.agregar_producto, name="Add"),
+    path('agregar/<int:id>/', views.agregar_producto, name="agregar"),
+    path('sumar/<int:id>/', views.sumar_producto, name="Add"),
     path('eliminar/<int:id>/', views.eliminar_producto, name="Del"),
     path('restar/<int:id>/', views.restar_producto, name="Sub"),
     path('limpiar/', views.limpiar_carrito, name="CLS"),

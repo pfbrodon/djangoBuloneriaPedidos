@@ -140,10 +140,10 @@ def buscar(request):
 @login_required
 def pedidos(request):
     form = ProductoBusqueda()
-    formCant= ProductoCantidad(initial={'cantidad': 1})
     if request.method == 'GET': 
         print('va el GET')
         productos = Producto.objects.all()
+        formCant= ProductoCantidad(initial={'cantidad': 1})
         for producto in productos:
             producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
         return render(request, 'pedidos.html', {
@@ -221,6 +221,12 @@ def eliminar_producto(request, id):
     carrito = Carrito(request)
     producto = Producto.objects.get(id=id)
     carrito.eliminar(producto)
+    return redirect("pedidos")
+
+def sumar_producto(request,id):
+    carrito = Carrito(request)
+    producto = Producto.objects.get(id=id)
+    carrito.sumar(producto)
     return redirect("pedidos")
 
 def restar_producto(request,id):

@@ -47,6 +47,15 @@ class Carrito:
             self.carrito[id]["acumulado"] -= round(producto.precioCosto * producto.utilidad.utilValor, 2)
             if self.carrito[id]["cantidad"] <= 0: self.eliminar(producto)
             self.guardarInSesion()
+            
+    def sumar(self, producto):
+        id = str(producto.id)
+        if id in self.carrito.keys():
+            self.carrito[id]["cantidad"] += 1
+            self.carrito[id]["acumulado"] += round(producto.precioCosto * producto.utilidad.utilValor, 2)
+            if self.carrito[id]["cantidad"] <= 0: self.eliminar(producto)
+            self.guardarInSesion()
+
 
     def limpiar(self):
         self.session["carrito"] = {}
