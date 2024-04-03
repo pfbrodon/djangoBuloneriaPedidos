@@ -52,11 +52,14 @@
                                 <td class="centrarbotones">
                                     <div class="row">
                                         <div class="col-6">
-                                            {%csrf_token%} {{ formCant }}
+                                            <form method="POST" action="{% url 'Add' id=producto.id %}">
+                                                {%csrf_token%} {{ formCant }}
+                                                <button type="submit" class="btn btn-success">AGREGAR</button>
+                                            </form>
                                         </div>
                                         <div class="btn-group col-6">
-                                            <a href="{% url 'Add' id=producto.id %}" class="btn btn-success">AGREGAR</a>
-                                            <!--<button type="submit" class="btn btn-success">AGREGAR</button>-->
+                                            <!--<a href="{% url 'Add' id=producto.id %}" class="btn btn-success">AGREGAR</a>
+                                            <button type="submit" class="btn btn-success">AGREGAR</button>-->
                                         </div>
                                     </div>
                                 </td>

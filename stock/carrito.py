@@ -12,24 +12,25 @@ class Carrito:
             self.carrito = carrito
             
 
-    def agregar(self, producto):
+    def agregar(self, producto, cantidad):
+        print(f"bla bla bla {cantidad} unidades")
         id = str(producto.id)
         if id not in self.carrito.keys():
             self.carrito[id]={
                 "producto_id": producto.id,
                 "nombre": producto.descripcion,
-                "acumulado": round(producto.precioCosto * producto.utilidad.utilValor, 2),
-                "cantidad": 1,
+                "acumulado": cantidad*(round(producto.precioCosto * producto.utilidad.utilValor, 2)),
+                "cantidad": cantidad,
             }
         else:
-            self.carrito[id]["cantidad"] += 1
-            self.carrito[id]["acumulado"] += round(producto.precioCosto * producto.utilidad.utilValor, 2)
+            self.carrito[id]["cantidad"] += cantidad
+            print(f'en el else {cantidad}')
+            self.carrito[id]["acumulado"] = self.carrito[id]["cantidad"]*(round(producto.precioCosto * producto.utilidad.utilValor, 2))
         self.guardarInSesion()
 
     def guardarInSesion(self):
         self.session["carrito"] = self.carrito
         self.session.modified = True
-        print("Contenido del carrito:")
         #self.imprimir() #anulado hasta que se modifique finaly se pase el nombre del archivo desde la vista
                 
 

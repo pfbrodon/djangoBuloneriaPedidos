@@ -16,28 +16,35 @@
                 <td class="colDescripcion">{{value.nombre}}</td>
                 <td class="columNum">{{value.acumulado}}</td>
                 <td class="centrarbotonesCarro">
-                    <div class="btn-group">
-                        <a href="{% url 'Add' id=value.producto_id %}" class="btn btn-dark btn-primary">+</a>
-                        <a href="{% url 'Sub' id=value.producto_id %}" class="btn btn-dark btn-secondary">-</a>
+                    <div class="row">
+                        <div class="col-6 columNum">
+                            {{value.cantidad}}
+                        </div>
+                        <div class="col-6 ">
+                            <div class="btn-group ">
+                                <a href="{% url 'Add' id=value.producto_id %} " class="btn btn-dark btn-primary ">+</a>
+                                <a href="{% url 'Sub' id=value.producto_id %} " class="btn btn-dark btn-secondary ">-</a>
+                            </div>
+                        </div>
                     </div>
                 </td>
             </tr>
             {% endfor %} {% else %}
             <tr>
-                <td colspan="3">
-                    <div class="alert alert-danger text-center"> Sin Productos </div>
+                <td colspan="3 ">
+                    <div class="alert alert-danger text-center "> Sin Productos </div>
                 </td>
             </tr>
             {% endif %}
             <tr>
-                <th scope="row">Total:</th>
-                <td colspan="2">$ {{total_carrito}}</td>
+                <th scope="row ">Total:</th>
+                <td colspan="2 ">$ {{total_carrito}}</td>
             </tr>
         </tbody>
     </table>
     <hr>
-    <div class="row text-center">
-        <div class="col-6"><a href="{% url 'CLS' %}" class="btn btn-danger">LIMPIAR</a></div>
-        <div class="col-6"><a href="{% url 'guardar' %}" class="btn btn-success">GUARDAR</a></div>
+    <div class="row text-center ">
+        <div class="col-6 "><a href="{% url 'CLS' %} " class="btn btn-danger ">LIMPIAR</a></div>
+        <div class="col-6 "><a href="{% url 'guardar' %} " class="btn btn-success ">GUARDAR</a></div>
     </div>
 </div>

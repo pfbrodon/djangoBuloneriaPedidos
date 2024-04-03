@@ -196,12 +196,25 @@ def tienda(request):
     productos = Producto.objects.all()
     return render(request, "tienda.html", {'productos':productos})
 
-def agregar_producto(request, id):
+'''def agregar_producto(request, id):
     carrito = Carrito(request)
     producto = Producto.objects.get(id=id)
     carrito.agregar(producto)
-    return redirect("pedidos")
-
+    return redirect("pedidos")'''
+    
+def agregar_producto(request, id):
+    if request.method == 'POST':
+        form = ProductoCantidad(request.POST)
+        if form.is_valid():
+            carrito = Carrito(request)
+            producto = Producto.objects.get(id=id)
+            cantidad = form.cleaned_data['cantidad']  # Ajusta 'cantidad' al nombre real del campo en tu formulario
+            print(f"Cantidad del producto a agregar: {cantidad}")  # Imprime la cantidad en la terminal
+            carrito.agregar(producto, cantidad)  # Agrega el producto al carrito con la cantidad especificada
+            return redirect("pedidos")
+    else:
+        form = ProductoCantidad()  # Crea una instancia de tu formulario
+        return redirect("pagina_error")  # Redirige a una página de error si el formulario no es válido o el método no es POST
 
 
 def eliminar_producto(request, id):
