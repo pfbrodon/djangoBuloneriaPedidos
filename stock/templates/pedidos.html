@@ -40,8 +40,8 @@
                                 <!-- Agrega más columnas según las propiedades de tu modelo Producto -->
                             </tr>
                         </thead>
-                        {% for producto in productos %}
                         <tbody>
+                            {% for producto in productos %}
                             <tr class="contenido">
                                 <td scope="row" class="columCategoria">{{ producto.categoria.catNom }}</td>
                                 <td class="columMarca">{{ producto.marca.marcaNom }}</td>
@@ -52,11 +52,11 @@
                                 <td class="centrarbotones">
                                     <div class="row">
                                         <form method="POST" action="{% url 'agregar' id=producto.id %}">
-                                            {%csrf_token%}
-                                            <div class="col-6">
+                                            {% csrf_token %}
+                                            <div>
                                                 {{ formCant }}
                                             </div>
-                                            <div class="col-6">
+                                            <div>
                                                 <button type="submit" class="btn btn-success">AGREGAR</button>
                                             </div>
                                         </form>
@@ -64,8 +64,8 @@
                                 </td>
                                 <!-- Agrega más celdas según las propiedades de tu modelo Producto -->
                             </tr>
+                            {% endfor %}
                         </tbody>
-                        {% endfor %}
                     </table>
                 </form>
             </div>
