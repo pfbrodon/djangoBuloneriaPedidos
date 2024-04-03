@@ -146,7 +146,6 @@ def pedidos(request):
         productos = Producto.objects.all()
         for producto in productos:
             producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
-            formCant = ProductoCantidad(initial={'descripcion': producto.cantidad})
         return render(request, 'pedidos.html', {
             'form': form,
             'formCant':formCant,
@@ -198,14 +197,12 @@ def tienda(request):
     return render(request, "tienda.html", {'productos':productos})
 
 def agregar_producto(request, id):
-        #if request.method == 'POST':
-        #   formCant = ProductoBusqueda(request.POST)
-        #    if formCant.is_valid():
-        #        cantidad = formCant.cleaned_data['cantidad']################
-                carrito = Carrito(request)
-                producto = Producto.objects.get(id=id)
-                carrito.agregar(producto)
-                return redirect("pedidos")
+    carrito = Carrito(request)
+    producto = Producto.objects.get(id=id)
+    carrito.agregar(producto)
+    return redirect("pedidos")
+
+
 
 def eliminar_producto(request, id):
     carrito = Carrito(request)
@@ -224,11 +221,6 @@ def limpiar_carrito(request):
     carrito.limpiar()
     return redirect("pedidos")
 
-'''def imprimir_carrito(request):
-    carrito = Carrito(request)
-    nombre_archivo="pedido.json"
-    carrito.imprimir(nombre_archivo)
-    return redirect("pedidos")'''
 def guardar_carrito(request):
     carrito = Carrito(request)
     carrito.guardarInDb()

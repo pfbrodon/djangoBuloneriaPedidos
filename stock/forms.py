@@ -49,7 +49,7 @@ class ProductoBusqueda(forms.Form):
     )
 
 class ProductoCantidad(forms.Form):
-    descripcion = forms.IntegerField(
+    cantidad = forms.IntegerField(
         max_value=9999,
         min_value=0,
         label='',        
