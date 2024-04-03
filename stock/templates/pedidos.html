@@ -50,10 +50,14 @@
                                 <td class="columNum" id="cantidad{{ producto.id }}">{{ producto.cantidad }}</td>
                                 <td class="columMoneda">${{ producto.precioPublico}}</td>
                                 <td class="centrarbotones">
-                                    <div class="btn-group">
-                                        {%csrf_token%} {{ formCant }}
-                                        <a href="{% url 'Add' id=producto.id %}" class="btn btn-success">AGREGAR</a>
-                                        <!--<button type="submit" class="btn btn-success">AGREGAR</button>-->
+                                    <div class="row">
+                                        <div class="col-6">
+                                            {%csrf_token%} {{ formCant }}
+                                        </div>
+                                        <div class="btn-group col-6">
+                                            <a href="{% url 'Add' id=producto.id %}" class="btn btn-success">AGREGAR</a>
+                                            <!--<button type="submit" class="btn btn-success">AGREGAR</button>-->
+                                        </div>
                                     </div>
                                 </td>
                                 <!-- Agrega más celdas según las propiedades de tu modelo Producto -->

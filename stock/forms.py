@@ -53,5 +53,5 @@ class ProductoCantidad(forms.Form):
         max_value=9999,
         min_value=0,
         label='',        
-        widget=forms.NumberInput(attrs={'class': 'form-control-outline','style': 'width: 75px;'})
+        widget=forms.NumberInput(attrs={'class': 'form-control-outline','style': 'width: 75px; height: 26px'})
     )

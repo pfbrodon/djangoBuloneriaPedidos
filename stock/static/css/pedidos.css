@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.col-6 {
+    text-align: center;
+}
+
 .carroHeaderPrecio {
     text-align: center;
 }
@@ -44,7 +48,7 @@
 }
 
 .table {
-    font-size: 13px;
+    font-size: 12px;
     width: 100%;
     border-collapse: collapse;
     line-height: 27px;
@@ -98,7 +102,7 @@
 
 .table td:nth-child(7),
 .table th:nth-child(7) {
-    width: 5%;
+    width: 20%;
     /* Porcentaje deseado para la cuarta columna */
 }
 

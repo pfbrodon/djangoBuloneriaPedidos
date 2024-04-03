@@ -140,7 +140,7 @@ def buscar(request):
 @login_required
 def pedidos(request):
     form = ProductoBusqueda()
-    formCant= ProductoCantidad()
+    formCant= ProductoCantidad(initial={'cantidad': 1})
     if request.method == 'GET': 
         print('va el GET')
         productos = Producto.objects.all()
