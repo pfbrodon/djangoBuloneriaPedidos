@@ -81,21 +81,12 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'buloneria.wsgi.application'
+####PARA DESPLEGAR EN DOCKER 
+##CSRF_TRUSTED_ORIGINS = ["186.123.87.15", "https://waferserver.ddns.net", "https://www.waferserver.ddns.net"]
 
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-#postgresql://postgres:2dEfbfG3fddfFfCEGeC4D4eC5FG52D*e@viaduct.proxy.rlwy.net:48851/railway
-'''DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '2dEfbfG3fddfFfCEGeC4D4eC5FG52D*e',
-        'HOST': 'viaduct.proxy.rlwy.net',
-        'PORT': '48851'
-    }
-}'''
 
 ###############POSTGRES LOCALHOST#######################
 '''DATABASES = {
@@ -109,25 +100,14 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
     }
 }'''
 
-################BASE MYSQL RAILWAY###################
-'''DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',
-        'USER': 'root',
-        'PASSWORD': 'HbG3C4GDe2-6BdB2CEehbeECb-b5e1Dg',
-        'HOST': 'monorail.proxy.rlwy.net',
-        'PORT': '28358'
-    }
-}'''
-###############BASE LOCAL MYSQL##################
+###############BASE LOCAL MYSQL PARA DOCKER EN PRODUCCION##################
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'wafersas',
-        'USER': 'root',
-        'PASSWORD': '12345678',
-        'HOST': 'localhost',
+        'USER': 'waferuser',
+        'PASSWORD': 'Coni1734',
+        'HOST': 'mysql',
         'PORT': '3306'
     }
 }'''
@@ -143,7 +123,7 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
     }
 }'''
 
-
+######### BASE DE DATOS PARA DESARROLLO#########
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
