@@ -139,23 +139,23 @@ def buscar(request):
 ####################################################################################
 @login_required
 def pedidos(request):
-    form = ProductoBusqueda()
-    if request.method == 'GET': 
-        print('va el GET')
-        productos = Producto.objects.all()
-        formCant= ProductoCantidad(initial={'cantidad': 1})
-        for producto in productos:
-            producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
-        return render(request, 'pedidos.html', {
-            'form': form,
-            'formCant':formCant,
-            'productos': productos
-            })
+    formBusq = ProductoBusqueda()
+    formCant= ProductoCantidad(initial={'cantidad': 1})
+    print('va el GET de pedidos')
+    productos = Producto.objects.all()
+    formCant= ProductoCantidad(initial={'cantidad': 1})
+    for producto in productos:
+        producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
+    return render(request, 'pedidos.html', {
+        'formBusq': formBusq,
+        'formCant':formCant,
+        'productos': productos
+        })
 ####################################################################################
 @login_required
 def listapedidos(request):
     if request.method == 'GET': 
-        print('va el GET')
+        print('va el GE de listapedidos')
         pedidos = Pedidosnumtest.objects.all()
         return render(request, 'listapedidos.html',{
             'pedidos':pedidos 
