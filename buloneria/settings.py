@@ -32,10 +32,7 @@ ALLOWED_HOSTS = ['*']
 ####EN PRODUCCION###############################
 #ALLOWED_HOSTS = ['djangobuloneriapedidos-production.up.railway.app','127.0.0.1']
 
-#CSRF_TRUSTED_ORIGINS  = [
-#    "https://djangobuloneriapedidos-production.up.railway.app",
-    # Otros orígenes permitidos si es necesario
-#]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -85,6 +82,9 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
 ##CSRF_TRUSTED_ORIGINS = ["186.123.87.15", "https://waferserver.ddns.net", "https://www.waferserver.ddns.net"]
 
 
+#CSRF_TRUSTED_ORIGINS = ["186.123.87.15", "https://waferserver.ddns.net", "https://www.waferserver.ddns.net"]
+
+
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -100,7 +100,11 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
     }
 }'''
 
+<<<<<<< HEAD
 ###############BASE LOCAL MYSQL PARA DOCKER EN PRODUCCION##################
+=======
+###############BASE LOCAL MYSQL DOCKER CONTAINER##################
+>>>>>>> d2665d606e523581e1b23000ab56eae0b22e6efd
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -108,6 +112,7 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
         'USER': 'waferuser',
         'PASSWORD': 'Coni1734',
         'HOST': 'mysql',
+<<<<<<< HEAD
         'PORT': '3306'
     }
 }'''
@@ -119,6 +124,8 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
         'USER': 'u653598207_root',
         'PASSWORD': 'Buloneria123456',
         'HOST': '154.49.247.154',
+=======
+>>>>>>> d2665d606e523581e1b23000ab56eae0b22e6efd
         'PORT': '3306'
     }
 }'''

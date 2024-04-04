@@ -2,7 +2,7 @@
     <table class="table table-bordered">
         <thead>
             <tr>
-                <th scope="row" colspan="3" class="text-center">CARRITO</th>
+                <th scope="row" colspan="4" class="text-center">CARRITO</th>
             </tr>
             <tr>
                 <th scope="col">DESCRIPCION</th>
@@ -17,10 +17,10 @@
                 <td class="columNum">{{value.acumulado}}</td>
                 <td class="centrarbotonesCarro">
                     <div class="row">
-                        <div class="col-6 columNum">
+                        <div class="col">
                             {{value.cantidad}}
                         </div>
-                        <div class="col-6 ">
+                        <div class="col">
                             <div class="btn-group ">
                                 <a href="{% url 'Add' id=value.producto_id %} " class="btn btn-dark btn-primary ">+</a>
                                 <a href="{% url 'Sub' id=value.producto_id %} " class="btn btn-dark btn-secondary ">-</a>
@@ -38,7 +38,7 @@
             {% endif %}
             <tr>
                 <th scope="row ">Total:</th>
-                <td colspan="2 ">$ {{total_carrito}}</td>
+                <td colspan="2 " class="text-center">$ {{total_carrito}}</td>
             </tr>
         </tbody>
     </table>
