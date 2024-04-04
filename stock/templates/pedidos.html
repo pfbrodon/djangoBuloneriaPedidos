@@ -51,10 +51,10 @@
                                 <div class="row">
                                     <form method="post" action="{% url 'agregar' id=producto.id %}">
                                         {% csrf_token %}
-                                        <div class="col-6">
+                                        <div class="col">
                                             {{ formCant }}
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col">
                                             <button type="submit" class="btn btn-success">PEDIR</button>
                                         </div>
                                     </form>
