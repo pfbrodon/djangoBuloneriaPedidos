@@ -100,11 +100,7 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
     }
 }'''
 
-<<<<<<< HEAD
 ###############BASE LOCAL MYSQL PARA DOCKER EN PRODUCCION##################
-=======
-###############BASE LOCAL MYSQL DOCKER CONTAINER##################
->>>>>>> d2665d606e523581e1b23000ab56eae0b22e6efd
 '''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -112,7 +108,6 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
         'USER': 'waferuser',
         'PASSWORD': 'Coni1734',
         'HOST': 'mysql',
-<<<<<<< HEAD
         'PORT': '3306'
     }
 }'''
@@ -124,8 +119,6 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
         'USER': 'u653598207_root',
         'PASSWORD': 'Buloneria123456',
         'HOST': '154.49.247.154',
-=======
->>>>>>> d2665d606e523581e1b23000ab56eae0b22e6efd
         'PORT': '3306'
     }
 }'''
