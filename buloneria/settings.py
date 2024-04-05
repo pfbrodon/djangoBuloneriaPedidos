@@ -82,9 +82,6 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
 ##CSRF_TRUSTED_ORIGINS = ["186.123.87.15", "https://waferserver.ddns.net", "https://www.waferserver.ddns.net"]
 
 
-#CSRF_TRUSTED_ORIGINS = ["186.123.87.15", "https://waferserver.ddns.net", "https://www.waferserver.ddns.net"]
-
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
@@ -111,25 +108,25 @@ WSGI_APPLICATION = 'buloneria.wsgi.application'
         'PORT': '3306'
     }
 }'''
-##########BASE MYSQL HOSTINGER#################
-'''DATABASES = {
+##########BASE MYSQL LOCALHOST#################
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'u653598207_wafersas',
-        'USER': 'u653598207_root',
-        'PASSWORD': 'Buloneria123456',
-        'HOST': '154.49.247.154',
+        'NAME': 'wafersas',
+        'USER': 'waferuser',
+        'PASSWORD': 'Coni1734',
+        'HOST': 'localhost',
         'PORT': '3306'
     }
-}'''
+}
 
 ######### BASE DE DATOS PARA DESARROLLO#########
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
+}'''
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
