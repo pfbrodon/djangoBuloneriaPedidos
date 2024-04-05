@@ -40,8 +40,6 @@ def signup(request):
         "error": 'Password no Coincide'
         })
 
-#def stock(request):
-#    return render(request,'stock.html')
 
 def signout(request):
     logout(request)
@@ -53,7 +51,7 @@ def signin(request):
             'form': AuthenticationForm
         })
     else:
-        print(request.POST)
+        #print(request.POST)#IMPRESION DE AYUDA
         user=authenticate(request, username=request.POST['username'], password=request.POST['password'])
         if user is None:
             return render(request, 'signin.html', {
@@ -74,7 +72,7 @@ def nuevo(request):
         form = NuevoForm(request.POST)
         if form.is_valid():
             form.save()  # Esto guarda los datos en la base de datos
-            print(request.POST)
+            #print(request.POST) #PRINT DE AYUDA
             return render(request, 'nuevo.html',{
                 'form': NuevoForm
             })
@@ -97,7 +95,7 @@ def actualizar(request, id):
         form = ProductoForm(request.POST, instance=producto)
         if form.is_valid():
             form.save()  # Esto guarda los datos en la base de datos
-            print(request.POST)
+            #print(request.POST) #PRINT DE AYUDA
             return redirect('stock')
     else:
         return render(request, 'actualizar.html', {'form': None, 'producto': None})
@@ -122,12 +120,12 @@ def stock(request):
 def buscar(request):
     if request.method=='POST':
         form=ProductoBusqueda(request.POST)
-        print(request.POST)
+        #print(request.POST) #PRINT DE AYUDA
         if form.is_valid():
             descripcion = form.cleaned_data['descripcion']
-            print(f'EL VALOR DE DESCRIPCIONES: {descripcion}') #IMPRESION DE AYUDA
+            #print(f'EL VALOR DE DESCRIPCIONES: {descripcion}') #IMPRESION DE AYUDA
             palabrasClave= descripcion.split()
-            print(palabrasClave)  #IMPRESION DE AYUDA
+            #print(palabrasClave)  #IMPRESION DE AYUDA
             palabrasClave=[Q(descripcion__icontains=palabra) for palabra in palabrasClave]
             productos = Producto.objects.filter(*palabrasClave)
             for producto in productos:
@@ -173,12 +171,12 @@ def pedidodetalle(request, id):
 def buscarp(request):
     if request.method=='POST':
         form=ProductoBusqueda(request.POST)
-        print(request.POST)
+        #print(request.POST)#PRINT DE AYUDA
         if form.is_valid():
             descripcion = form.cleaned_data['descripcion']
-            print(f'EL VALOR DE DESCRIPCIONES: {descripcion}') #IMPRESION DE AYUDA
+            #print(f'EL VALOR DE DESCRIPCIONES: {descripcion}') #IMPRESION DE AYUDA
             palabrasClave= descripcion.split()
-            print(palabrasClave)  #IMPRESION DE AYUDA
+            #print(palabrasClave)  #IMPRESION DE AYUDA
             palabrasClave=[Q(descripcion__icontains=palabra) for palabra in palabrasClave]
             productos = Producto.objects.filter(*palabrasClave)
             for producto in productos:
@@ -209,7 +207,7 @@ def agregar_producto(request, id):
             carrito = Carrito(request)
             producto = Producto.objects.get(id=id)
             cantidad = form.cleaned_data['cantidad']  # Ajusta 'cantidad' al nombre real del campo en tu formulario
-            print(f"Cantidad del producto a agregar: {cantidad}")  # Imprime la cantidad en la terminal
+            #print(f"Cantidad del producto a agregar: {cantidad}")  # Imprime la cantidad en la terminal
             carrito.agregar(producto, cantidad)  # Agrega el producto al carrito con la cantidad especificada
             return redirect("pedidos")
     else:
