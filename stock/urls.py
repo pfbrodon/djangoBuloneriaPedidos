@@ -13,6 +13,7 @@ urlpatterns = [
     path('stock/buscar/', views.buscar, name='buscar'),
     path('pedidos/', views.pedidos, name='pedidos'),
     path('pedidos/buscarp', views.buscarp, name='buscarp'),
+    #path('carrito/', views.carrito, name='carrito'),
     path('listapedidos/', views.listapedidos, name='listapedidos'),
     path('listapedidos/pedidodetalle/<int:id>', views.pedidodetalle, name='pedidodetalle'),
     #########################################
@@ -21,6 +22,6 @@ urlpatterns = [
     path('eliminar/<int:id>/', views.eliminar_producto, name="Del"),
     path('restar/<int:id>/', views.restar_producto, name="Sub"),
     path('limpiar/', views.limpiar_carrito, name="CLS"),
-    path('guardar/', views.guardar_carrito, name="guardar"),
+    path('guardar/<str:totalCarrito>', views.guardar_carrito, name="guardar"),
 
 ]

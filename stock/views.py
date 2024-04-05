@@ -19,7 +19,7 @@ def home(request):
 
 def signup(request):
     if request.method == "GET":
-        print('Enviando Formulario')
+        #print('Enviando Formulario') #IMPRESION GUIA
         return render(request, 'signup.html', {
         'form': UserCreationForm
         })
@@ -108,10 +108,10 @@ def actualizar(request, id):
 def stock(request):
     form = ProductoBusqueda()
     if request.method == 'GET': 
-        print('va el GET')
+        #print('va el GET') #IMPRESION GUIA
         productos = Producto.objects.all()
         for producto in productos:
-            producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
+            producto.precioPublico= floatformat((producto.precioCosto*producto.iva.ivaValor)*producto.utilidad.utilValor,2)
         return render(request, 'stock.html', {
             'form': form,
             'productos': productos
@@ -129,7 +129,7 @@ def buscar(request):
             palabrasClave=[Q(descripcion__icontains=palabra) for palabra in palabrasClave]
             productos = Producto.objects.filter(*palabrasClave)
             for producto in productos:
-                producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
+                producto.precioPublico= floatformat((producto.precioCosto*producto.iva.ivaValor)*producto.utilidad.utilValor,2)
             return render(request, 'stock.html', {
                 'form': form, 
                 'productos': productos
@@ -139,11 +139,11 @@ def buscar(request):
 def pedidos(request):
     formBusq = ProductoBusqueda()
     formCant= ProductoCantidad(initial={'cantidad': 1})
-    print('va el GET de pedidos')
+    #print('va el GET de pedidos') #IMPRESION GUIA
     productos = Producto.objects.all()
     formCant= ProductoCantidad(initial={'cantidad': 1})
     for producto in productos:
-        producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
+        producto.precioPublico= floatformat((producto.precioCosto*producto.iva.ivaValor)*producto.utilidad.utilValor,2)
     return render(request, 'pedidos.html', {
         'formBusq': formBusq,
         'formCant':formCant,
@@ -153,7 +153,7 @@ def pedidos(request):
 @login_required
 def listapedidos(request):
     if request.method == 'GET': 
-        print('va el GE de listapedidos')
+        #print('va el GE de listapedidos') #IMPRESION GUIA
         pedidos = Pedidosnumtest.objects.all()
         return render(request, 'listapedidos.html',{
             'pedidos':pedidos 
@@ -168,6 +168,12 @@ def pedidodetalle(request, id):
     })
 
 ###################################################################################
+
+@login_required
+def carrito(request):
+    return render(request, 'carrito.html')    
+
+###################################################################################
 def buscarp(request):
     if request.method=='POST':
         form=ProductoBusqueda(request.POST)
@@ -180,7 +186,7 @@ def buscarp(request):
             palabrasClave=[Q(descripcion__icontains=palabra) for palabra in palabrasClave]
             productos = Producto.objects.filter(*palabrasClave)
             for producto in productos:
-                producto.precioPublico= floatformat(producto.precioCosto*producto.utilidad.utilValor,2)
+                producto.precioPublico= floatformat((producto.precioCosto*producto.iva.ivaValor)*producto.utilidad.utilValor,2)
             return render(request, 'pedidos.html', {
                 'form': form, 
                 'productos': productos
@@ -238,7 +244,8 @@ def limpiar_carrito(request):
     carrito.limpiar()
     return redirect("pedidos")
 
-def guardar_carrito(request):
+def guardar_carrito(request,totalCarrito):
+    print (f'El total del Carrito es: {totalCarrito}')
     carrito = Carrito(request)
-    carrito.guardarInDb()
+    carrito.guardarInDb(totalCarrito)
     return redirect("pedidos")

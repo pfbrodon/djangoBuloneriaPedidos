@@ -38,6 +38,7 @@
                             <th scope="col">DESCRIPCION</th>
                             <th scope="col">CANTIDAD</th>
                             <th scope="col">P COSTO</th>
+                            <th scope="col">IVA</th>
                             <th scope="col">UTLIDAD</th>
                             <th scope="col">P VENTA</th>
                             <th scope="col">ACCIONES</th>
@@ -54,6 +55,7 @@
                             <td class="columDescripcion">{{ producto.descripcion }}</td>
                             <td class="columNum">{{ producto.cantidad }}</td>
                             <td class="columMoneda">${{ producto.precioCosto }}</td>
+                            <td class="columMoneda">${{ producto.iva.ivaDescripcion }}</td>
                             <td class="columUtilidad">{{ producto.utilidad.utilDescripcion}}</td>
                             <td class="columMoneda">${{ producto.precioPublico}}</td>
                             <td class="centrarbotones">

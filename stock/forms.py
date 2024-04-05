@@ -4,13 +4,14 @@ from .models import Producto
 class NuevoForm(ModelForm):
     class Meta:
         model= Producto
-        fields=('codigo', 'categoria' , 'marca' , 'descripcion' , 'cantidad' , 'utilidad' , 'precioCosto' )
+        fields=('codigo', 'categoria' , 'marca' , 'descripcion' , 'cantidad' , 'iva' ,'utilidad' , 'precioCosto' )
         widgets ={
             'codigo': forms.NumberInput(attrs={'class': 'form-control','id':'codigo','style': 'width: 150px'}),
             'categoria': forms.Select(attrs={'class': 'form-select','style': 'width: 220px'}),
             'marca': forms.Select(attrs={'class': 'form-select','id':'marca','style': 'width: 220px'}),
             'descripcion': forms.TextInput(attrs={'class': 'form-control', 'id':'descripcion','style': 'width: 500px'}),
             'cantidad': forms.NumberInput(attrs={'class': 'form-control','id':'cantidad','style': 'width: 150px'}),
+            'iva': forms.Select(attrs={'class': 'form-select','style': 'width: 220px'}),
             'utilidad': forms.Select(attrs={'class': 'form-select','style': 'width: 220px'}),
             'precioCosto': forms.NumberInput(attrs={'class': 'form-control','style': 'width: 150px'}),
         }
@@ -19,21 +20,24 @@ class NuevoForm(ModelForm):
         }
     def __init__(self, *args, **kwargs):
         super(NuevoForm, self).__init__(*args, **kwargs)
-        self.fields['categoria'].empty_label = 'Seleccione la categoría'
-        self.fields['marca'].empty_label = 'Seleccione la marca'
-        self.fields['utilidad'].empty_label = 'Seleccione la utilidad'
+        self.fields['categoria'].empty_label = 'Seleccione la Categoría'
+        self.fields['marca'].empty_label = 'Seleccione la Marca'
+        self.fields['utilidad'].empty_label = 'Seleccione la Utilidad'
+        self.fields['iva'].empty_label = 'Seleccione el I.V.A.'
+
 
 
 class ProductoForm(ModelForm):
     class Meta:
         model= Producto
-        fields=('codigo', 'categoria' , 'marca' , 'descripcion' , 'cantidad' , 'utilidad' ,'precioCosto')
+        fields=('codigo', 'categoria' , 'marca' , 'descripcion' , 'cantidad' , 'iva' , 'utilidad' ,'precioCosto')
         widgets ={
             'codigo': forms.NumberInput(attrs={'class': 'form-control','id':'codigo','style': 'width: 150px'}),
             'categoria': forms.Select(attrs={'class': 'form-select','style': 'width: 150px','placeholder': 'Seleccione la categoría'}),
             'marca': forms.Select(attrs={'class': 'form-select','id':'marca','style': 'width: 150px','placeholder': 'Seleccione la marca'}),
             'descripcion': forms.TextInput(attrs={'class': 'form-control', 'id':'descripcion','style': 'width: 500px'}),
             'cantidad': forms.NumberInput(attrs={'class': 'form-control','id':'cantidad','style': 'width: 150px'}),
+            'iva': forms.Select(attrs={'class': 'form-select','style': 'width: 220px'}),
             'utilidad': forms.Select(attrs={'class': 'form-select','style': 'width: 150px','placeholder': 'Seleccione la utilidad'}),     
             'precioCosto': forms.NumberInput(attrs={'class': 'form-select','style': 'width: 150px'}),            
         }

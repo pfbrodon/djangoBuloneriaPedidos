@@ -21,6 +21,13 @@ class Marcas(models.Model):
     def __str__(self):
         return self.marcaNom
     
+class Iva(models.Model):
+    ivaValor = models.FloatField(default=0.0)
+    ivaDescripcion = models.CharField(max_length= 10)
+    def __str__(self):
+        return str(self.ivaValor)
+
+    
 class Producto(models.Model):
     categoria = models.ForeignKey(Categorias, on_delete=models.CASCADE)
     marca = models.ForeignKey(Marcas, on_delete=models.CASCADE)
@@ -28,6 +35,7 @@ class Producto(models.Model):
     descripcion = models.CharField(max_length = 150)
     cantidad = models.IntegerField()
     precioCosto = models.FloatField(default=0.0)
+    iva = models.ForeignKey(Iva, default=1, on_delete=models.CASCADE)
     utilidad = models.ForeignKey(Utilidad, on_delete=models.CASCADE)
     precioPublico= models.FloatField(default=0.0)
 
@@ -35,6 +43,7 @@ class Pedidosnumtest(models.Model):
     pedidoUser = models.CharField(max_length=50)
     pedidoIdUser = models.IntegerField()
     pedidoFecha = models.DateTimeField(auto_now_add=True)
+    pedidoTotal = models.FloatField(default=0.0)
     pedidoCodigo = models.CharField(max_length=10, unique=True)
     def save(self, *args, **kwargs):
         if not self.pedidoCodigo:

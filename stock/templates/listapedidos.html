@@ -24,6 +24,7 @@
                                 <th scope="col">ID USUARIO</th>
                                 <th scope="col" class="text-center">ID PEDIDO</th>
                                 <th scope="col">FECHA PEDIDO</th>
+                                <th scope="col">TOTAL PEDIDO</th>
                                 <th scope="col">ADMINISTRACION</th>
                                 <!-- Agrega más columnas según las propiedades de tu modelo Producto -->
                             </tr>
@@ -36,6 +37,7 @@
                                 <td>{{ pedido.pedidoIdUser }}</td>
                                 <td class=" text-center">{{ pedido.id }}</td>
                                 <td>{{ pedido.pedidoFecha }}</td>
+                                <td>{{ pedido.pedidoTotal }}</td>
                                 <td>
                                     <div class="btn-group">
                                         <a href="{% url 'pedidodetalle' id=pedido.id %}" class="btn btn-success">VER</a>
