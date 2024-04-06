@@ -10,7 +10,7 @@
             <h3>DETALLE DE PEDIDO </h3>
         </div>
         <div class="col-3 text-center" style="background-color: #e3e3e3; padding: 5px;">
-            <h3>$ {{ totalPedido }} </h3>
+            <h4>$ {{ totalPedido }}- </h4>
         </div>
 
     </div>
@@ -51,7 +51,9 @@
                         <tr>
                             <td colspan="4"></td>
                             <td>Total acumulado:</td>
-                            <td>{{totalPedido}}</td>
+                            <td class="text-center">
+                                <h4>{{totalPedido}}-</h4>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
