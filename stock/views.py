@@ -163,8 +163,13 @@ def listapedidos(request):
 def pedidodetalle(request, id):
     pedido= get_object_or_404 (Pedidosnumtest, id=id)
     productosPedido = Pedidostest.objects.filter(numPedido_id=pedido.id)
+    totalPedido=0
+    for producto in productosPedido:
+        totalPedido=totalPedido+producto.acumulado
+        print (totalPedido)
     return render(request, 'pedidodetalle.html',{
-        'productosPedido':productosPedido
+        'productosPedido':productosPedido,
+        'totalPedido':totalPedido
     })
 
 ###################################################################################
