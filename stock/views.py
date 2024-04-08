@@ -168,6 +168,7 @@ def pedidodetalle(request, id):
         totalPedido=totalPedido+producto.acumulado
         print (totalPedido)
     return render(request, 'pedidodetalle.html',{
+        'usuario': pedido.pedidoUser,
         'productosPedido':productosPedido,
         'totalPedido':totalPedido
     })
