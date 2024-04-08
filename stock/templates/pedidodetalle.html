@@ -4,13 +4,13 @@
 <div class="container">
     <div class="row">
         <div class="col-3 text-center" style="background-color: #e3e3e3; padding: 5px;">
-            <h3>xxxx </h3>
+            <h5>Usuario: {{ usuario }} </h5>
         </div>
         <div class="col-6 text-center" style="background-color: #e3e3e3; padding: 5px;">
             <h3>DETALLE DE PEDIDO </h3>
         </div>
         <div class="col-3 text-center" style="background-color: #e3e3e3; padding: 5px;">
-            <h3>$ {{total_carrito}} {{ productopedido.acumulado }}</h3>
+            <h4>Total: $ {{ totalPedido }}- </h4>
         </div>
 
     </div>
@@ -40,7 +40,6 @@
                             <td>{{ productopedido.acumulado }}</td>
                             <td>
                                 <div class="btn-group">
-
                                     <a href="" class="btn btn-success">S/ASIG</a>
                                     <a href="" class="btn btn-danger">S/ASIG</a>
                                 </div>
@@ -49,9 +48,13 @@
                         </tr>
                         {% endfor %}
                         <tr>
-                            <td colspan="4"></td>
-                            <td>Total acumulado:</td>
-                            <td>{{ total_acumulado }}</td>
+                            <td colspan="3" style="width: 10%;"></td>
+                            <td style="width: 10%;">
+                                <h5>Total:</h5>
+                            </td>
+                            <td class="text-center" style="width: 10%;">
+                                <h5>{{totalPedido}}-</h5>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

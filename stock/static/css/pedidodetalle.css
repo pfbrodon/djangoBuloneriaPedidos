@@ -79,7 +79,7 @@
 
 .table td:nth-child(3),
 .table th:nth-child(3) {
-    width: 45%;
+    width: 35%;
     text-align: left;
     /* Porcentaje deseado para la cuarta columna */
 }
@@ -93,6 +93,13 @@
 
 .table td:nth-child(5),
 .table th:nth-child(5) {
+    width: 8%;
+    text-align: center;
+    /* Porcentaje deseado para la cuarta columna */
+}
+
+.table td:nth-child(6),
+.table th:nth-child(6) {
     width: 8%;
     text-align: center;
     /* Porcentaje deseado para la cuarta columna */
