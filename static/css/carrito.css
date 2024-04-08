@@ -1,0 +1,17 @@
+.carrito-container {
+    position: fixed;
+    top: 100;
+    right: 0;
+    width: 300px;
+    /* ajusta el ancho según sea necesario */
+    height: 100%;
+    /* altura completa */
+    background-color: #d53f3f;
+    /* color de fondo */
+    border-left: 1px solid #ccc;
+    /* borde izquierdo para separarlo del contenido principal */
+    overflow-y: auto;
+    /* agregar desplazamiento vertical si el contenido es demasiado largo */
+    z-index: 1000;
+    /* asegúrate de que esté por encima de otros elementos */
+}

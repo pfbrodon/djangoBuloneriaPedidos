@@ -17,10 +17,13 @@
                     <button type="submit" class="btn btn-warning">BUSCAR</button>
                 </div>
             </form>
+            <div>
+                <button id="toggle-cart-btn" class="btn btn-primary">CARRO</button>
+            </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-8" style="background-color: #e3e3e3; padding: 5px;">
+        <div class="col-12" style="background-color: #e3e3e3; padding: 5px;">
             <div class="table-responsive">
                 <table id="tabla" class="table table-striped table-bordered table-hover">
                     <thead>
@@ -64,10 +67,28 @@
                 </table>
             </div>
         </div>
-        <div class="col-4" style="background-color: #e3e3e3; padding: 5px; position: relative;">
+        <div id="carrito-container" class="col-5" style="background-color: #e3e3e3; padding: 2px; position: fixed; top: 20; right: 0; display: none;">
             {% include "carrito.html" %}
         </div>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Obtener referencia al botón y al contenedor del carrito
+        var toggleCartBtn = document.getElementById('toggle-cart-btn');
+        var carritoContainer = document.getElementById('carrito-container');
+
+        // Agregar evento de clic al botón
+        toggleCartBtn.addEventListener('click', function() {
+            // Si el carrito está visible, ocultarlo; de lo contrario, mostrarlo
+            if (carritoContainer.style.display === 'block') {
+                carritoContainer.style.display = 'none';
+            } else {
+                carritoContainer.style.display = 'block';
+            }
+        });
+    });
+</script>
+
 {% endblock %}
