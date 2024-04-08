@@ -73,22 +73,7 @@
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Obtener referencia al botón y al contenedor del carrito
-        var toggleCartBtn = document.getElementById('toggle-cart-btn');
-        var carritoContainer = document.getElementById('carrito-container');
+<script src="{% static '/js/carrito.js' %}"></script>
 
-        // Agregar evento de clic al botón
-        toggleCartBtn.addEventListener('click', function() {
-            // Si el carrito está visible, ocultarlo; de lo contrario, mostrarlo
-            if (carritoContainer.style.display === 'block') {
-                carritoContainer.style.display = 'none';
-            } else {
-                carritoContainer.style.display = 'block';
-            }
-        });
-    });
-</script>
 
 {% endblock %}
