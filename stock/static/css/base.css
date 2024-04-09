@@ -1,3 +1,16 @@
 .col-12 {
     text-align: justify;
 }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    /* Puedes ajustar el color de fondo según tu diseño */
+    z-index: 1000;
+    /* Esto es opcional y se utiliza para asegurar que el menú esté por encima de otros elementos si es necesario */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Esto es opcional y se utiliza para agregar una sombra al menú */
+}
