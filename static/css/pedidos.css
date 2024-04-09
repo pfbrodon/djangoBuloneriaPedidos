@@ -38,8 +38,14 @@
     text-align: center;
 }
 
-.centrarbotones {
-    text-align: center;
+.custom-form {
+    display: flex;
+    align-items: center;
+}
+
+.custom-form .col {
+    margin-right: 5px;
+    /* Espacio entre los elementos */
 }
 
 .centrarbotonesCarro {
@@ -62,47 +68,47 @@
 
 .table td:nth-child(1),
 .table th:nth-child(1) {
-    width: 5%;
+    width: 8%;
     /*text-align: center;*/
     /* Porcentaje deseado para la tercera columna */
 }
 
 .table td:nth-child(2),
 .table th:nth-child(2) {
-    width: 5%;
+    width: 8%;
     /* Porcentaje deseado para la cuarta columna */
 }
 
 .table td:nth-child(3),
 .table th:nth-child(3) {
-    width: 5%;
+    width: 8%;
     /* Porcentaje deseado para la cuarta columna */
 }
 
 .table td:nth-child(4),
 .table th:nth-child(4) {
-    width: 45%;
+    width: 38%;
     text-align: left;
     /* Porcentaje deseado para la cuarta columna */
 }
 
 .table td:nth-child(5),
 .table th:nth-child(5) {
-    width: 2%;
+    width: 8%;
     text-align: center;
     /* Porcentaje deseado para la cuarta columna */
 }
 
 .table td:nth-child(6),
 .table th:nth-child(6) {
-    width: 4%;
+    width: 8%;
     text-align: right;
     /* Porcentaje deseado para la cuarta columna */
 }
 
 .table td:nth-child(7),
 .table th:nth-child(7) {
-    width: 25%;
+    width: 8%;
     /* Porcentaje deseado para la cuarta columna */
 }
 
@@ -206,15 +212,4 @@ td {
     overflow: hidden;
     transition: all 0.5s;
     /* Añadimos una transición para suavizar el efecto de colapso */
-}
-
-.expanded {
-    width: 100%;
-    /* Ampliar el contenido al 100% del ancho */
-    height: auto;
-    /* Permitir que la altura se ajuste automáticamente */
-    padding: 5px;
-    /* Añadir padding para un mejor aspecto */
-    box-sizing: border-box;
-    /* Incluir el padding en el ancho total */
 }
