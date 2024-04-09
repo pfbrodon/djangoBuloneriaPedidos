@@ -100,10 +100,6 @@ def actualizar(request, id):
     else:
         return render(request, 'actualizar.html', {'form': None, 'producto': None})
     
-
-#def buscar(request):
-#    form = ProductoBusqueda()
-#    return render(request, 'stock.html', {'form': form})
 @login_required
 def stock(request):
     form = ProductoBusqueda()

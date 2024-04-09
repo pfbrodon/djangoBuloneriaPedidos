@@ -177,6 +177,23 @@
     color: rgb(73, 73, 73);
 }
 
+.btn-secondary {
+    width: 65px;
+    height: 36px;
+    ;
+    padding: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+    justify-content: center;
+    vertical-align: middle;
+    outline-color: dimgrey;
+    outline-style: solid;
+    outline-width: 1px;
+    color: rgb(73, 73, 73);
+}
+
 .encabezados {
     text-align: center;
 }

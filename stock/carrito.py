@@ -13,7 +13,7 @@ class Carrito:
             
 
     def agregar(self, producto, cantidad):
-        print(f"bla bla bla {cantidad} unidades")
+        #print(f"bla bla bla {cantidad} unidades")
         id = str(producto.id)
         if id not in self.carrito.keys():
             self.carrito[id]={
@@ -24,7 +24,7 @@ class Carrito:
             }
         else:
             self.carrito[id]["cantidad"] += cantidad
-            print(f'en el else {cantidad}')
+            #print(f'en el else {cantidad}')
             self.carrito[id]["acumulado"] = self.carrito[id]["cantidad"]*(round((producto.precioCosto*producto.iva.ivaValor) * producto.utilidad.utilValor, 2))
         self.guardarInSesion()
 
@@ -62,7 +62,7 @@ class Carrito:
         self.session.modified = True
 ####Solo imprimir el carrito          
     def guardarInDb(self, totalCarrito):
-        print("Contenido del carrito:", self.session["carrito"])
+        #print("Contenido del carrito:", self.session["carrito"])
         # Guardar Numero de Pedido generado automaticamente en el campo de la tabla
         # Crear un nuevo pedido y obtener el número de pedido generado automáticamente
         nuevo_pedido = Pedidosnumtest.objects.create(
@@ -72,7 +72,7 @@ class Carrito:
         )
         numero_pedido = nuevo_pedido.id  # Guardar el número de pedido generado
         # Hacer algo con el número de pedido, por ejemplo, imprimirlo
-        print("Número de Pedido:", numero_pedido)
+        #print("Número de Pedido:", numero_pedido)
         for item_id, item_info in self.carrito.items():
             # Crear una instancia del modelo Pedido y guardarla en la base de datos
             pedido = Pedidostest.objects.create(
@@ -84,4 +84,4 @@ class Carrito:
             )
         self.session["carrito"] = {}
         self.session.modified = True
-        print("El carrito ha sido limpiado y los pedidos han sido guardados exitosamente.")
+        #print("El carrito ha sido limpiado y los pedidos han sido guardados exitosamente.")

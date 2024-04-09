@@ -1,30 +1,30 @@
 <div class="container">
     <div class="alert alert-primary rounded-0" role="alert">
-        <table class="table table-bordered">
+        <table class="table table-bordered table-striped table-hover">
             <thead>
                 <tr>
                     <th scope="row" colspan="4" class="text-center">CARRITO</th>
                 </tr>
                 <tr>
-                    <th scope="col">DESCRIPCION</th>
-                    <th scope="col" class="carroHeaderPrecio">PRECIO</th>
-                    <th scope="col" class="text-center">CANTIDAD</th>
+                    <th scope="col" class="text-center" style="width: 70%;">DESCRIPCION</th>
+                    <th scope="col" class="text-center" style="width: 10%;">PRECIO</th>
+                    <th scope="col" class="text-center" style="width: 20%;">CANTIDAD</th>
                 </tr>
             </thead>
             <tbody>
                 {% if request.session.carrito.items %} {% for key, value in request.session.carrito.items %}
                 <tr>
-                    <td class="colDescripcion">{{value.nombre}}</td>
-                    <td class="columNum">{{value.acumulado}}</td>
+                    <td style="font-size: 10px;">{{value.nombre}}</td>
+                    <td style="font-size: 10px; text-align: right;">{{value.acumulado}}</td>
                     <td class="centrarbotonesCarro">
                         <div class="row">
-                            <div class="col">
+                            <div class="col" style="font-size: 10px;" class="text-center">
                                 {{value.cantidad}}
                             </div>
                             <div class="col">
                                 <div class="btn-group ">
                                     <a href="{% url 'Add' id=value.producto_id %} " class="btn btn-dark btn-primary ">+</a>
-                                    <a href="{% url 'Sub' id=value.producto_id %} " class="btn btn-dark btn-secondary ">-</a>
+                                    <a href="{% url 'Sub' id=value.producto_id %} " class="btn btn-dark btn-primary ">-</a>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                 {% endif %}
                 <tr>
                     <th scope="row ">Total:</th>
-                    <td colspan="2 " class="text-center">$ {{total_carrito}}</td>
+                    <td colspan="2 " class="text-center" style="font-size: 12px;">$ {{total_carrito}}</td>
                 </tr>
             </tbody>
         </table>
