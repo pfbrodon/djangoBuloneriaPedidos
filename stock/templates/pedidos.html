@@ -33,7 +33,7 @@
                             <th scope="col">CODIGO</th>
                             <th scope="col" class="text-center">DESCRIPCION</th>
                             <th scope="col">CANTIDAD</th>
-                            <th scope="col">P VENTA</th>
+                            <th scope="col" class="text-center">P VENTA</th>
                             <th scope="col">ACCIONES</th>
                             <!-- Agrega más columnas según las propiedades de tu modelo Producto -->
                         </tr>
@@ -49,7 +49,7 @@
                             <td class="columMoneda">${{ producto.precioPublico}}</td>
                             <td class="centrarbotones">
                                 <div class="row">
-                                    <form method="post" action="{% url 'agregar' id=producto.id %}">
+                                    <form method="post" action="{% url 'agregar' id=producto.id %}" class="custom-form">
                                         {% csrf_token %}
                                         <div class="col">
                                             {{ formCant }}
