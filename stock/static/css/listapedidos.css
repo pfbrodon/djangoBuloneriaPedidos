@@ -6,14 +6,6 @@
     text-align: center;
 }
 
-.columNum {
-    text-align: center;
-}
-
-.columDescripcion {
-    text-align: center;
-}
-
 .centrarbotones {
     text-align: center;
 }
@@ -29,11 +21,6 @@
     border-collapse: collapse;
     line-height: 27px;
     padding: 2px;
-}
-
-.table-responsive {
-    text-align: center;
-    align-items: center;
 }
 
 .table td:nth-child(1),
@@ -57,21 +44,28 @@
 
 .table td:nth-child(4),
 .table th:nth-child(4) {
-    width: 8;
+    width: 10%;
     text-align: center;
     /* Porcentaje deseado para la cuarta columna */
 }
 
 .table td:nth-child(5),
 .table th:nth-child(5) {
-    width: 30%;
+    width: 15%;
     text-align: center;
     /* Porcentaje deseado para la cuarta columna */
 }
 
 .table td:nth-child(6),
 .table th:nth-child(6) {
-    width: 30%;
+    width: 8%;
+    text-align: right;
+    /* Porcentaje deseado para la cuarta columna */
+}
+
+.table td:nth-child(7),
+.table th:nth-child(7) {
+    width: 10%;
     text-align: center;
     /* Porcentaje deseado para la cuarta columna */
 }
@@ -139,10 +133,6 @@
     outline-style: solid;
     outline-width: 1px;
     color: rgb(73, 73, 73);
-}
-
-.encabezados {
-    text-align: center;
 }
 
 .form-control-outline {

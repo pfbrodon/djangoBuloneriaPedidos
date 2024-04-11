@@ -1,12 +1,10 @@
 {% extends 'base.html' %} {% block content %} {% load static %}
 <link rel="stylesheet" href="{% static '/css/listapedidos.css' %}">
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 <div class="container">
     <div class="row">
         <div class="col-12" style="background-color: #e3e3e3; padding: 5px;">
-            <h3>LISTA DE PEDIDOS</h3>
+            <h3 class="animate__animated animate__backInRight">LISTA DE PEDIDOS</h3>
         </div>
     </div>
     <div class="row">
@@ -24,7 +22,7 @@
                                 <th scope="col">ID USUARIO</th>
                                 <th scope="col" class="text-center">ID PEDIDO</th>
                                 <th scope="col">FECHA PEDIDO</th>
-                                <th scope="col">TOTAL PEDIDO</th>
+                                <th scope="col" class="text-center">TOTAL PEDIDO</th>
                                 <th scope="col">ADMINISTRACION</th>
                                 <!-- Agrega más columnas según las propiedades de tu modelo Producto -->
                             </tr>
@@ -37,7 +35,7 @@
                                 <td>{{ pedido.pedidoIdUser }}</td>
                                 <td class=" text-center">{{ pedido.id }}</td>
                                 <td>{{ pedido.pedidoFecha }}</td>
-                                <td>{{ pedido.pedidoTotal }}</td>
+                                <td>$ {{ pedido.pedidoTotal }}-</td>
                                 <td>
                                     <div class="btn-group">
                                         <a href="{% url 'pedidodetalle' id=pedido.id %}" class="btn btn-success">VER</a>
