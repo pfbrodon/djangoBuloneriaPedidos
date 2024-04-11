@@ -41,7 +41,7 @@
                                 <td>
                                     <div class="btn-group">
                                         <a href="{% url 'pedidodetalle' id=pedido.id %}" class="btn btn-success">VER</a>
-                                        <a href="" class="btn btn-danger">ELIMINAR</a>
+                                        <a href="{% url 'pedidodelete' id=pedido.id %}" class="btn btn-danger">ELIMINAR</a>
                                     </div>
                                 </td>
                                 <!-- Agrega más celdas según las propiedades de tu modelo Producto -->

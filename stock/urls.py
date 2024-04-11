@@ -15,6 +15,7 @@ urlpatterns = [
     path('pedidos/buscarp', views.buscarp, name='buscarp'),
     #path('carrito/', views.carrito, name='carrito'),
     path('listapedidos/', views.listapedidos, name='listapedidos'),
+    path('listapedidos/pedidodelete/<int:id>', views.pedidodelete, name='pedidodelete'),
     path('listapedidos/pedidodetalle/<int:id>', views.pedidodetalle, name='pedidodetalle'),
     #########################################
     path('agregar/<int:id>/', views.agregar_producto, name="agregar"),

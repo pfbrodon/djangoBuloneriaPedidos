@@ -154,6 +154,22 @@ def listapedidos(request):
         return render(request, 'listapedidos.html',{
             'pedidos':pedidos 
         })
+
+'''@login_required
+def pedidodelete(request):
+    if request.method == 'GET': 
+        print('va el GE de listapedidos') #IMPRESION GUIA
+        pedidos = Pedidosnumtest.objects.all()
+        return render(request, 'listapedidos.html',{
+            'pedidos':pedidos 
+        })'''
+        
+@login_required 
+def pedidodelete(request, id):
+    producto = get_object_or_404 (Pedidosnumtest, id=id)
+    producto.delete()
+    return redirect('listapedidos')
+        
 ###################################################################################
 @login_required
 def pedidodetalle(request, id):
